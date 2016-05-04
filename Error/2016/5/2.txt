@@ -1,0 +1,9 @@
+用户IP:::1
+发生时间:2016/5/2 星期一 15:25:12
+发生异常页: http://localhost:60838/test/test.aspx
+异常信息: “3classComparison”不是有效标识符。
+错误源:System.Web
+堆栈信息:   在 System.Web.UI.TemplateParser.ProcessError(String message)
+   在 System.Web.UI.TemplateParser.ProcessBeginTag(Match match, String inputText)
+   在 System.Web.UI.TemplateParser.ParseStringInternal(String text, Encoding fileEncoding)
+--------------------------------------------------------------------------------------

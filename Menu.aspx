@@ -619,7 +619,10 @@
 
                                 </div>
 
-
+                               <!--天气-->
+                                <div>
+                                    <script src="http://ext.weather.com.cn/home/5728b1ca37d40114b43e366c.js"></script>
+                                </div>
 
                                 <!-- PAGE CONTENT ENDS -->
                             </div>
