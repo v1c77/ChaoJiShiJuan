@@ -645,7 +645,7 @@
                                                                 <h3 style="font-family: SimHei">教师统计分析</h3>
                                                             </div>
                                                             <div class="row">
-                                                                <div class="col-sm-6 col-xs-12">
+                                                                <div class="col-sm-6 col-xs-12" style="text-align:center;">
                                                                     <asp:Literal ID="class3Comparison" runat="server"></asp:Literal>
                                                                 </div>
                                                                 <div class="col-sm-6 col-xs-12">
@@ -660,7 +660,7 @@
                                                                 <h3 style="font-family: SimHei">管理员统计</h3>
                                                             </div>
                                                             <div class="row">
-                                                                <div class="col-sm-6 col-xs-12">
+                                                                <div class="col-sm-6 col-xs-12" style="text-align:center;">
                                                                     <asp:Literal ID="adminweeksignin" runat="server"></asp:Literal>
                                                                 </div>
                                                                 <div class="col-sm-6 col-xs-12">
@@ -675,7 +675,7 @@
                                                                 <h3 style="font-family: SimHei">学生统计</h3>
                                                             </div>
                                                             <div class="row">
-                                                                <div class="col-sm-6 col-xs-12">
+                                                                <div class="col-sm-6 col-xs-12" style="text-align:center;">
                                                                     <asp:Literal ID="studentError" runat="server"></asp:Literal>
                                                                 </div>
                                                                 <div class="col-sm-6 col-xs-12 infobox-container">
