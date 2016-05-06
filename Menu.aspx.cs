@@ -11,6 +11,7 @@ using Util;
 using BLL;
 using Model;
 using System.Text;
+using FusionCharts.Charts;
 
 public partial class _Default : BasePage
 {
@@ -46,17 +47,17 @@ public partial class _Default : BasePage
                     menu4.Visible = false; menu5.Visible = false; menu6.Visible = false;
                     menu7.Visible = false;  menu9.Visible = true;
                     studentInt.Visible = false; teacherInt.Visible = false; adminInt.Visible = true; oeadminInt.Visible = false;
-                    Image1.ImageUrl = "~/images/admin.jpg"; break;
+                    Image1.ImageUrl = "~/images/admin.png"; break;
                 case 2: lblRole.Text = "教师"; menu1.Visible = false; menu2.Visible = false; menu3.Visible = true;
                     menu4.Visible = true; menu5.Visible = true; menu6.Visible = true;
                     menu7.Visible = false;  menu9.Visible = true;
                     studentInt.Visible = false; teacherInt.Visible = true; adminInt.Visible = false; oeadminInt.Visible = false;
-                    Image1.ImageUrl = "~/images/tea.jpg"; break;
+                    Image1.ImageUrl = "~/images/tea.png"; break;
                 case 3: lblRole.Text = "学生"; menu1.Visible = false; menu2.Visible = false; menu3.Visible = false;
                     menu4.Visible = false; menu5.Visible = false; menu6.Visible = false;
                     menu7.Visible = true;  menu9.Visible = false;
                     studentInt.Visible = true; teacherInt.Visible = false; adminInt.Visible = false; oeadminInt.Visible = false;
-                    Image1.ImageUrl = "~/images/stu.jpg"; break;
+                    Image1.ImageUrl = "~/images/stu.png"; break;
                 case 4: lblRole.Text = "超级管理员"; menu1.Visible = true; menu2.Visible = true; menu3.Visible = false;
                     menu4.Visible = false; menu5.Visible = false; menu6.Visible = false;
                     menu7.Visible = false;  menu9.Visible = true;
@@ -64,6 +65,23 @@ public partial class _Default : BasePage
                     Image1.ImageUrl = "~/images/admin.jpg"; break;
             }
         }
+        //教师
+        Chart Comparison = new Chart("column2d", "class3Comparison", "500", "400", "jsonurl", "fusionChartsData/Class3HLAData.json");
+        class3Comparison.Text = Comparison.Render();
+
+        Chart ExamStat = new Chart("radar", "teacherExamStat", "500", "450", "jsonurl", "fusionChartsData/teacherExam.json");
+        techerExamStat.Text = ExamStat.Render();
+
+        //学生
+        Chart StudentError = new Chart("bar2d", "studentError", "400", "300", "jsonurl", "fusionChartsData/studentError.json");
+        studentError.Text = StudentError.Render();
+
+        //管理员
+        Chart AdminWeekSign = new Chart("area2d", "adminsighin", "500", "400", "jsonurl", "fusionChartsData/adminSignIn.json");
+        adminweeksignin.Text = AdminWeekSign.Render();
+
+        Chart AdminIpStatic = new Chart("pie2d", "adminipstatic", "450", "300", "jsonurl", "fusionChartsData/ipStat.json");
+        adminipstatic.Text = AdminIpStatic.Render();
     }
 
     protected void BindData()
