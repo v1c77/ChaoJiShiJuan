@@ -1,0 +1,314 @@
+<!doctype html>
+<html lang="en">
+ <head>
+  <meta charset="gb2312">
+  <meta name="viewport" content="width=device-width,initial-scale=1"><!--禁止缩放，启动响应式-->
+  <link rel="stylesheet" href="../bootstrap/css/bootstrap.min.css">
+  <link rel="stylesheet" href="../bootstrap-datetimepicker/css/bootstrap-datetimepicker.min.css">
+      <!-- mystyle.css-->
+  <link rel="stylesheet" href="../assets/css/mystyle.css" />
+  <title>ExerciseList</title>
+  <style>
+  .panel-footer{
+   padding:0;
+   background-color:#FFFFFF;
+   height:34px;
+  }
+  .panel-footer ul{
+   margin:0;
+  }
+  .pagination>li:first-child>a{
+  border-top-left-radius:0;
+  }
+  .pagination>li:last-child>a{
+  border-top-right-radius:0;
+  border-bottom-right-radius:0;
+  }
+  .panel{
+   margin-bottom:5px;
+   border:none;
+   border-color:
+  }
+  .panel-body{
+   padding:0;
+  }
+  .panel-heading{
+   border:none; 
+  }
+  .panel-footer{
+   bottom:0;
+   width:100%;
+  }
+  .table{
+  margin:0;	
+  }
+  .table tr td{
+
+  margin:0;	
+  }
+  </style>
+ </head>
+ <body>
+ <div  class="container-fluid" >
+	<div  class="row">
+		<div  class="col-sm-12 col-xs-12 ">	 
+		  <div  class="panel panel-default" style="height:100%;">
+		   <div  class="panel-heading">
+		    <form method="post" action="" class="form-inline" role="form">						   
+			 <label class="sr-only">练习名</label>										 
+			 <input type="text" style="width:200px;" class="form-control" placeholder="练习名">	
+			 <select class="form-control" > <!--可换成asp:DropDownList 属性 CssClass="form-control"-->
+                 <option  selected="selected">所有科目</option>
+                 <option>XXXXXXXXX</option>
+             </select>
+             <div class="btn-group" role="group">
+			  <a href="" class="btn btn-default"><span class="glyphicon glyphicon-search marginRight" ></span>搜索</a>
+			  <a href="" class="btn btn-default" data-toggle="modal" data-target="#add"><span class="glyphicon  glyphicon-plus marginRight" ></span>添加</a>
+			  <a href="" class="btn btn-default"><span class="glyphicon glyphicon-remove marginRight" ></span>删除所选</a>
+             </div>
+			</form>
+		   </div><!--panel-heading-->
+		   <div  class="panel-body" id="panel-body">
+			 
+            <div class="table-responsive">
+			 <table class="table table_style">
+			  <tr>
+			   <td>		   			 
+					 <input type="checkbox" />		
+			   </td>
+			   <td >
+			    
+			   </td>
+			   <td >
+			    <label>考试名</label>
+			   </td>
+			   <td >
+			     <label>试卷名</label>
+			   </td>
+			   <td>
+			    <label>开始时间</label>
+			   </td>
+			   <td>
+			    <label>结束时间</label>
+			   </td>
+			   <td>
+			   </td>
+			   <td>
+			   </td>
+			  </tr>
+			  <tr>
+			   <td>
+				
+					 <input type="checkbox" />
+				
+			   </td>
+			   <td>
+			     <span>MIS系统进程</span>
+			   </td>
+			   <td >
+			      <span>MIS期中考试</span>
+			   </td>
+			   <td>
+			   随机试卷1
+			   </td>
+			   <td>
+			     2013/6/7 9:40:00
+			   </td>
+			   <td>
+			    2016/3/24 9:40:00
+			   </td>
+			   <td>
+			    <a href="" class="btn btn-default"><span class="glyphicon glyphicon-pencil marginRight" ></span>编辑考试</a>
+			   </td>
+			   <td>
+				<a href="" class="btn btn-default"  data-toggle="modal" data-target="#control"><span class="glyphicon glyphicon-facetime-video marginRight" ></span>进入监控</a>
+			   </td>
+			  </tr>
+			  <tr>
+			   <td>
+			
+					 <input type="checkbox" />
+				
+			   </td>
+			   <td>
+			     <span>MIS系统进程</span>
+			   </td>
+			   <td >
+			      <span>MIS期中考试</span>
+			   </td>
+			   <td>
+			   随机试卷1
+			   </td>
+			   <td>
+			     2013/6/7 9:40:00
+			   </td>
+			   <td>
+			     2016/3/24 9:40:00
+			   </td>
+			   <td>
+			    <a href="" class="btn btn-default"><span class="glyphicon glyphicon-pencil marginRight" ></span>编辑考试</a>
+			   </td>
+			   <td>
+				<a href="" class="btn btn-default"  data-toggle="modal" data-target="#control"><span class="glyphicon glyphicon-facetime-video marginRight" ></span>进入监控</a>
+			   </td>
+			  </tr>
+
+             </table>
+			</div> 
+			
+			
+
+
+			  
+		   </div>
+		   <div  class="panel-footer">
+		   
+             <ul class="pagination">
+              <li>
+                 <a href="#" aria-label="Previous">
+                   <span aria-hidden="true">&laquo;</span>
+                 </a>
+              </li>
+              <li><a href="#">1</a></li>
+              <li><a href="#">2</a></li>
+              <li><a href="#">3</a></li>
+              <li><a href="#">4</a></li>
+              <li><a href="#">5</a></li>
+              <li>
+              <a href="#" aria-label="Next">
+              <span aria-hidden="true">&raquo;</span>
+              </a>
+              </li>
+              </ul>
+		   </div>
+		  </div>
+		</div>
+	</div>
+ </div>
+
+
+<!-- 模态框（Modal）ExerciseAdd -->
+<div class="modal fade" id="add" tabindex="-1" role="dialog" aria-labelledby="myModalLabel1" aria-hidden="true">
+   <div class="modal-dialog">
+      <div class="modal-content">
+         <div class="modal-header">
+            <button type="button" class="close" 
+               data-dismiss="modal" aria-hidden="true">
+                  &times;
+            </button>
+            <h4 class="modal-title" id="myModalLabel1">
+               添加
+            </h4>
+         </div>
+         <div class="modal-body">
+            <form class="form-horizontal" role="form">
+               <div class="form-group">
+                 <label for="firstname" class="col-xs-2 control-label">练习名</label>
+                 <div class="col-xs-5">
+                   <input type="text" class="form-control" />		
+                 </div>
+				 <div class="col-xs-1">
+						*
+			     </div>
+               </div>
+               <div class="form-group">
+                     <label for="lastname" class="col-xs-2 control-label">科目</label>
+                     <div class="col-xs-5">
+                        <select class="form-control" > <!--可换成asp:DropDownList 属性 CssClass="form-control"-->
+                             <option  selected="selected">第一章</option>                           
+							 <option>第二章</option>
+							 <option>第三章</option>
+							 <option>第四章</option>
+							 <option>第五章</option>
+                        </select> 		
+                     </div>
+					 <div class="col-xs-1">
+						*
+					 </div>
+               </div>
+			   <div class="form-group">
+                     <label for="lastname" class="col-xs-2 control-label">试卷</label>
+                     <div class="col-xs-5">
+                      <select class="form-control" > <!--可换成asp:DropDownList 属性 CssClass="form-control"-->
+                             <option  selected="selected">一</option>                           
+							 <option>二</option>
+							 <option>三</option>
+							 <option>四</option>
+							 <option>五</option>
+                      </select>
+                     </div>
+					 <div class="col-xs-1">
+						*
+					 </div>
+               </div>
+               <div class="form-group">
+                 <label for="firstname" class="col-xs-2 control-label">开始时间</label>
+                 <div class="input-group col-xs-5 mydateDiv">
+                   <span style="position: relative; z-index: 9999;">
+                     <input type="text" class="form-control date-picker mydate" data-date-format="yyyy-mm-dd hh:ii" name="contract_date" id="contract_date" placeholder="请点击输入时间" />
+                       </span>                  
+                   </div>
+               </div>
+			   <div class="form-group">
+                 <label for="endtname" class="col-xs-2 control-label">截止时间</label>
+                  <div class="input-group col-xs-5 mydateDiv" >
+                   <span style="position: relative; z-index: 9999;">
+                     <input type="text" class="form-control date-picker mydate" data-date-format="yyyy-mm-dd hh:ii" name="contract_date2" id="contract_date2"  placeholder="请点击输入时间" />
+                       </span>                   
+                   </div>
+               </div>
+			   <div class="form-group">
+                     <div class="col-xs-5 col-xs-offset-2">
+                     <label>这里有一个Label</label>
+                     </div>
+               </div>
+			 
+			   
+         </div>
+         <div class="modal-footer">
+            <button type="button" class="btn btn-default" 
+               data-dismiss="modal">关闭
+            </button>
+			<button type="button" class="btn btn-info">
+               保存
+            </button>
+         </div>
+      </div><!-- /.modal-content -->
+	</div><!-- /.modal-dialog -->
+</div><!-- /.modal -->
+
+
+
+ <script  type="text/javascript"  src="../bootstrap/js/jquery-1.11.1.min.js"></script>
+ <script  type="text/javascript" src="../bootstrap/js/bootstrap.min.js"></script>
+ <script  type="text/javascript"  src="../bootstrap-datetimepicker/js/bootstrap-datetimepicker.min.js"></script>
+ <script   type="text/javascript"  src="../bootstrap-datetimepicker/js/locales/bootstrap-datetimepicker.zh-CN.js" charset="UTF-8"></script>
+ <script  type="text/javascript"  src="../assets/js/placeholderForSL.js"></script>
+ <script>
+ $('#contract_date').datetimepicker({
+        format: 'yyyy-mm-dd hh:ii',
+        language: 'zh-CN',
+        pickDate: true,
+        pickTime: true,
+        hourStep: 1,
+        minuteStep: 5,
+        inputMask: true
+      });
+$('#contract_date2').datetimepicker({
+        format: 'yyyy-mm-dd hh:ii',
+        language: 'zh-CN',
+        pickDate: true,
+        pickTime: true,
+        hourStep: 1,
+        minuteStep: 5,
+        inputMask: true
+      });
+ </script>
+  <script type="text/javascript">
+ //panel-body 根据内容改变高度
+   var body=document.getElementById("panel-body");
+   var table = document.getElementsByTagName("table");
+   body.style.height=table.style.height;
+ </script>
+ </body>
+</html>

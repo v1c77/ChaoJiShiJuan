@@ -639,7 +639,7 @@
 
                                                         </div>
                                                     </div>-->
-                                                    <div class="col-sm-12 col-xs-12" id="teacher_static">
+                                                    <div class="col-sm-12 col-xs-12" id="teacher_static" runat="server">
                                                         <div class="inform">
                                                             <div class="page-header myPage-header">
                                                                 <h3 style="font-family: SimHei">教师统计分析</h3>
@@ -654,7 +654,7 @@
                                                             </div>
                                                         </div>
                                                     </div>
-                                                    <div class="col-sm-12 col-xs-12" id="admin_static">
+                                                    <div class="col-sm-12 col-xs-12" id="admin_static" runat="server">
                                                         <div class="inform">
                                                             <div class="page-header myPage-header">
                                                                 <h3 style="font-family: SimHei">管理员统计</h3>
@@ -669,7 +669,7 @@
                                                             </div>
                                                         </div>
                                                     </div>
-                                                    <div class="col-sm-12 col-xs-12"id="student_static">
+                                                    <div class="col-sm-12 col-xs-12" id="student_static" runat="server">
                                                         <div class="inform">
                                                             <div class="page-header myPage-header">
                                                                 <h3 style="font-family: SimHei">学生统计</h3>
@@ -734,10 +734,7 @@
 
                                 </div>
 
-                               <!--天气-->
-                                <div>
-                                    <script src="http://ext.weather.com.cn/home/5728b1ca37d40114b43e366c.js"></script>
-                                </div>
+                              
 
                                 <!-- PAGE CONTENT ENDS -->
                             </div>

@@ -1,0 +1,313 @@
+<!doctype html>
+<html lang="en">
+ <head>
+  <meta charset="gb2312">
+  <meta name="viewport" content="width=device-width,initial-scale=1"><!--禁止缩放，启动响应式-->
+  <link rel="stylesheet" href="../bootstrap/css/bootstrap.min.css">
+      <!-- mystyle.css-->
+  <link rel="stylesheet" href="../assets/css/mystyle.css" />
+  <title>PaperAdd</title>
+  <style>
+  .panel-footer{
+   padding:0;
+   background-color:#FFFFFF;
+   height:34px;
+  }
+  .panel-footer ul{
+   margin:0;
+  }
+  .pagination>li:first-child>a{
+  border-top-left-radius:0;
+  }
+  .pagination>li:last-child>a{
+  border-top-right-radius:0;
+  border-bottom-right-radius:0;
+  }
+  .panel{
+   margin-bottom:5px;
+   border:none;
+   border-color:
+  }
+  .panel-body{
+   padding:0;
+  }
+  .panel-heading{
+   border:none; 
+  }
+  .panel-footer{
+   bottom:0;
+   width:100%;
+  }
+  .table{
+  margin:0;	
+  }
+  .table tr td{
+
+  margin:0;	
+  }
+  </style>
+ </head>
+ <body>
+ <div  class="container-fluid" >
+	<div  class="row">
+		<div  class="col-sm-12 col-xs-12 ">	 
+		 <form method="post" action="" class="form-inline" role="form">
+		  <div  class="panel panel-default" style="height:100%;">
+		   <div  class="panel-heading">					   
+			 <label class="sr-only">试卷标题</label>										 
+			 <input type="text" style="width:200px;"class="form-control" placeholder="试卷标题">
+			 <label>科目名</label>
+			 <select class="form-control" > <!--可换成asp:DropDownList 属性 CssClass="form-control"-->
+                 <option  selected="selected">所有科目</option>
+                 <option>XXXXXXXXX</option>
+             </select>
+			 <label>时间(分钟)</label>
+			 <select class="form-control" > <!--可换成asp:DropDownList 属性 CssClass="form-control"-->
+                 <option  selected="selected">30</option>
+                 <option>60</option>
+				 <option>90</option>
+             </select>
+			 <label>(不能为空)</label>
+		   </div><!--panel-heading-->
+		   <div  class="panel-body " id="panel-body">
+		   <div class="table-responsive">
+            <table class="table table_style">
+              <tr>
+			   <td>		   
+				  
+			   </td>
+			   <td>
+			    <label>该选题数</label>
+			   </td>
+			   <td>
+			     <label>每题分值</label>
+			   </td>
+			   <td>
+			    <label>总分</label>
+			   </td>
+
+			   <td>
+			   
+			   </td>
+			  </tr>
+			  <tr>
+			   <td>
+				  <span>
+					单选题
+				  </span>
+			   </td>
+			   <td>
+			     <input type="text" class="form-control" placeholder="可选数20">
+			   </td>
+			   <td>
+			     <input type="text" class="form-control">
+			   </td>
+			   <td>
+			      
+			   </td>
+			   <td>
+					<a href="" class="btn btn-default" data-toggle="modal" data-target="#edit"><span class="glyphicon glyphicon-wrench  marginRight" ></span>设置</a>
+			   </td>
+			  </tr>
+			  <tr>
+			   <td>
+				  <span>
+					多选题
+				  </span>
+			   </td>
+			   <td>
+			     <input type="text" class="form-control" placeholder="可选数20">
+			   </td>
+			   <td>
+			     <input type="text" class="form-control">
+			   </td>
+			   <td>
+			      
+			   </td>
+			   <td>
+					<a href="" class="btn btn-default" data-toggle="modal" data-target="#edit"><span class="glyphicon glyphicon-wrench  marginRight" ></span>设置</a>
+			   </td>
+			  </tr>
+			  <tr>
+			   <td>
+				  <span>
+					判断题
+				  </span>
+			   </td>
+			   <td>
+			     <input type="text" class="form-control" placeholder="可选数20">
+			   </td>
+			   <td>
+			     <input type="text" class="form-control">
+			   </td>
+			   <td>
+			      
+			   </td>
+			   <td>
+					<a href="" class="btn btn-default" data-toggle="modal" data-target="#edit"><span class="glyphicon glyphicon-wrench  marginRight" ></span>设置</a>
+			   </td>
+			  </tr>
+			  <tr>
+			   <td>
+				  <span>
+					填空题
+				  </span>
+			   </td>
+			   <td>
+			     <input type="text" class="form-control" placeholder="可选数20">
+			   </td>
+			   <td>
+			     <input type="text" class="form-control">
+			   </td>
+			   <td>
+			      
+			   </td>
+			   <td>
+					<a href="" class="btn btn-default" data-toggle="modal" data-target="#edit"><span class="glyphicon glyphicon-wrench  marginRight" ></span>设置</a>
+			   </td>
+			  </tr>
+			  <tr>
+			   <td>
+				  <span>
+					简答题
+				  </span>
+			   </td>
+			   <td>
+			     <input type="text" class="form-control" placeholder="可选数20">
+			   </td>
+			   <td>
+			     <input type="text" class="form-control">
+			   </td>
+			   <td>
+			      
+			   </td>
+			   <td>
+					<a href="" class="btn btn-default" data-toggle="modal" data-target="#edit"><span class="glyphicon glyphicon-wrench  marginRight" ></span>设置</a>
+			   </td>
+			  </tr>
+             </table>
+			</div>
+		  </div>
+		   <div  class="panel-footer">
+		    <div class="total">
+             <label>合计：</label><span>100</span>
+			 <div class="group">
+			 <a href="" class="btn btn-info"><span class="glyphicon glyphicon-calendar  marginRight" ></span>计算</a>
+			 <a href="" class="btn btn-info"><span class="glyphicon glyphicon-file  marginRight" ></span>保存</a>
+			 </div>
+			</div>
+		   </div>
+         </form>
+		</div>
+	</div>
+ </div>
+
+
+
+<!-- 模态框（Modal）PaperEdit -->
+<div class="modal fade" id="edit" tabindex="-1" role="dialog" 
+   aria-labelledby="myModalLabel" aria-hidden="true">
+  <form class="form-horizontal" role="form">
+   <div class="modal-dialog">
+      <div class="modal-content mymodal-content">
+         <div class="modal-header">
+            <button type="button" class="close" 
+               data-dismiss="modal" aria-hidden="true">
+                  &times;
+            </button>
+            <h4 class="modal-title" id="myModalLabel1">
+               详细设置
+            </h4>
+         </div>
+         <div class="modal-body">
+			<div class="table-responsive">
+		     <table class="table table_style">
+              <tr>
+			   <td>		   
+				    <label>章节</label>
+			   </td>
+			   <td>
+			    <label>章节题目</label>
+			   </td>
+			   <td >
+			     <label>可选道数</label>
+			   </td>
+			   </td>
+			   <td>
+			    <label>该出道数</label>
+			   </td>
+			  </tr>
+			  <tr>
+			   <td>
+				 <span>第一章</span>
+			   </td>
+			   <td>
+			    <span>操作系统引论</span>
+			   </td>
+			   <td>
+                <span>5</span>
+			   </td>
+			   <td>
+					<input type="text" class="form-control">
+			   </td>
+			  </tr>
+			  <tr>
+			   <td>
+				 <span>第一章</span>
+			   </td>
+			   <td>
+			    <span>操作系统引论</span>
+			   </td>
+			   <td>
+                <span>5</span>
+			   </td>
+			   <td>
+					<input type="text" class="form-control">
+			   </td>
+			  </tr>
+			  <tr>
+			   <td>
+				 <span>第一章</span>
+			   </td>
+			   <td>
+			    <span>操作系统引论</span>
+			   </td>
+			   <td>
+                <span>5</span>
+			   </td>
+			   <td>
+					<input type="text" class="form-control">
+			   </td>
+			  </tr>
+
+             </table>
+			</div>
+         </div>
+         <div class="modal-footer">
+            <button type="button" class="btn btn-default" 
+               data-dismiss="modal">关闭
+            </button>
+			<button type="button" class="btn btn-info">
+               确定
+            </button>
+         </div>
+      </div><!-- /.modal-content -->
+	</div><!-- /.modal-dialog -->
+  </form>
+</div><!-- /.modal -->
+
+
+
+
+
+ <script src="../bootstrap/js/jquery-1.11.1.min.js"></script>
+ <script src="../bootstrap/js/bootstrap.min.js"></script>
+ <script src="../assets/js/placeholderForSL.js"></script>
+ <script type="text/javascript">
+ //panel-body 根据内容改变高度
+   var body=document.getElementById("panel-body");
+   var table = document.getElementsByTagName("table");
+   body.style.height=table.style.height;
+ </script>
+ </body>
+</html>

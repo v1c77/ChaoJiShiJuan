@@ -1,0 +1,170 @@
+<!doctype html>
+<html lang="en">
+ <head>
+  <meta charset="gb2312">
+  <meta name="viewport" content="width=device-width,initial-scale=1"><!--禁止缩放，启动响应式-->
+  <link rel="stylesheet" href="../../bootstrap/css/bootstrap.min.css">
+      <!-- mystyle.css-->
+  <link rel="stylesheet" href="../../assets/css/mystyle.css" />
+  <title>MyScore</title>
+  <style>
+  .panel-footer{
+   padding:0;
+   background-color:#FFFFFF;
+   height:34px;
+  }
+  .panel-footer ul{
+   margin:0;
+  }
+  .pagination>li:first-child>a{
+  border-top-left-radius:0;
+  }
+  .pagination>li:last-child>a{
+  border-top-right-radius:0;
+  border-bottom-right-radius:0;
+  }
+  .panel{
+   margin-bottom:5px;
+   border:none;
+   border-color:
+  }
+  .panel-body{
+   padding:0;
+  }
+  .panel-heading{
+   border:none; 
+  }
+  .panel-footer{
+   bottom:0;
+   width:100%;
+  }
+  .table{
+  margin:0;	
+  }
+  .table tr td{
+
+  margin:0;	
+  }
+  </style>
+ </head>
+ <body>
+ <div  class="container-fluid" >
+	<div  class="row">
+		<div  class="col-sm-12 col-xs-12 ">	 
+		  <div  class="panel panel-default" style="height:100%;">
+		   <div  class="panel-heading">
+		    <form method="post" action="" class="form-inline" role="form">						   
+			 <select class="form-control" > <!--可换成asp:DropDownList 属性 CssClass="form-control"-->
+                 <option  selected="selected">未选择</option>
+                 <option>XXXXXXXXX</option>
+             </select>
+			 <a href="" class="btn btn-default"><span class="glyphicon glyphicon-search marginRight" ></span>搜索</a>
+
+
+			</form>
+		   </div><!--panel-heading-->
+		   <div  class="panel-body" id="panel-body" >
+			<div class="table-responsive">
+             <table class="table table_style">
+			 	<tr >
+				    <td> 
+					  <label>
+					   <input type="checkbox" />
+					  </label>
+					</td>
+					<td><span>班级</span></td>
+					<td><span>姓名</span></td>
+					<td><span>科目名</span></td>
+					<td><span>考试标题</span></td>
+					<td><span>分数</span></td>
+					<td><span>考试状态</span></td>
+					<td><span>操作</span></td>
+				</tr>
+				<tr>
+				    <td> 
+					  <label>
+					   <input type="checkbox" />
+					  </label>
+					</td>
+					<td><span>信管0903</span></td>
+					<td><span>罗伊唅（学生）</span></td>
+					<td><span>MIS系统软件</span></td>
+					<td><span>信管0903考试</span></td>
+					<td><span>6</span></td>
+					<td><span>重新考试</span></td>
+					<td><a href="" class="btn btn-default"><span class="glyphicon glyphicon-pencil marginRight" ></span>重考</a></td>
+				</tr>
+				<tr>
+				    <td> 
+					  <label>
+					   <input type="checkbox" />
+					  </label>
+					</td>
+					<td><span>信管0903</span></td>
+					<td><span>罗伊唅（学生）</span></td>
+					<td><span>MIS系统软件</span></td>
+					<td><span>信管0903考试</span></td>
+					<td><span>6</span></td>
+					<td><span>重新考试</span></td>
+					<td><a href="" class="btn btn-default"><span class="glyphicon glyphicon-pencil marginRight" ></span>重考</a></td>
+				</tr>
+				<tr>
+				    <td> 
+					  <label>
+					   <input type="checkbox" />
+					  </label>
+					</td>
+					<td><span>信管0903</span></td>
+					<td><span>罗伊唅（学生）</span></td>
+					<td><span>MIS系统软件</span></td>
+					<td><span>信管0903考试</span></td>
+					<td><span>6</span></td>
+					<td><span>重新考试</span></td>
+					<td><a href="" class="btn btn-default"><span class="glyphicon glyphicon-pencil marginRight" ></span>重考</a></td>
+				</tr>
+
+			 </table>
+			</div>
+			
+			
+
+
+			  
+		   </div>
+		   <div  class="panel-footer">
+		   
+             <ul class="pagination">
+              <li>
+                 <a href="#" aria-label="Previous">
+                   <span aria-hidden="true">&laquo;</span>
+                 </a>
+              </li>
+              <li><a href="#">1</a></li>
+              <li><a href="#">2</a></li>
+              <li><a href="#">3</a></li>
+              <li><a href="#">4</a></li>
+              <li><a href="#">5</a></li>
+              <li>
+              <a href="#" aria-label="Next">
+              <span aria-hidden="true">&raquo;</span>
+              </a>
+              </li>
+              </ul>
+		   </div>
+		  </div>
+		</div>
+	</div>
+ </div>
+
+
+ <script src="../../bootstrap/js/jquery-1.11.1.min.js"></script>
+ <script src="../../bootstrap/js/bootstrap.min.js"></script>
+ <script src="../../assets/js/placeholderForSL.js"></script>
+ <script type="text/javascript">
+ //panel-body 根据内容改变高度
+   var body=document.getElementById("panel-body");
+   var table = document.getElementsByTagName("table");
+   body.style.height=table.style.height;
+ </script>
+ </body>
+</html>
