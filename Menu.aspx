@@ -618,12 +618,7 @@
                                                                     </div>
                                                                 </div>
                                                                 <div class="col-sm-6 col-xs-12">
-                                                                    <!--
-                                                                        <div class="page-header myPage-header">
-                                                                            <h3 style="font-family: SimHei">天气</h3>
-                                                                        </div>                                            
-                                                                        <iframe width="280" scrolling="no" height="25" frameborder="0" allowtransparency="true" src="http://i.tianqi.com/index.php?c=code&id=34&icon=1&num=3"></iframe>
-                                                                        -->
+                                                                    
                                                                 </div>
                                                             </div>
                                                         </div>
