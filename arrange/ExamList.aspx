@@ -2,7 +2,46 @@
     CodeFile="ExamList.aspx.cs" Inherits="subject_SubjectList" Title="无标题页" %>
 
 <asp:Content ID="Content1" ContentPlaceHolderID="head" runat="Server">
+  
+  
+  <style>
+  .panel-footer{
+   padding:0;
+   background-color:#FFFFFF;
+   height:34px;
+  }
+  .panel-footer ul{
+   margin:0;
+  }
+  .pagination>li:first-child>a{
+  border-top-left-radius:0;
+  }
+  .pagination>li:last-child>a{
+  border-top-right-radius:0;
+  border-bottom-right-radius:0;
+  }
+  .panel{
+   margin-bottom:5px;
+   border:none;
+  }
+  .panel-body{
+   padding:0;
+  }
+  .panel-heading{
+   border:none; 
+  }
+  .panel-footer{
+   bottom:0;
+   width:100%;
+  }
+  .table{
+  margin:0;	
+  }
+  .table tr td{
 
+  margin:0;	
+  }
+  </style>
     <script type="text/javascript">
         $(function(){
            $('#oe_iframe').window('close');
@@ -73,9 +112,9 @@
 
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" runat="Server">
-    <div id="box">
+    <div class="row" id="box">
         <div id="box_top">
-            考试名：<asp:TextBox ID="txtWord" runat="server"></asp:TextBox>
+            考试名：<asp:TextBox ID="txtWord" CssClass="sr-only" runat="server"></asp:TextBox>
             <asp:DropDownList ID="ddlSubject" runat="server" Width="160px">
             </asp:DropDownList>
             <asp:LinkButton ID="lbtnSearch" runat="server" CssClass="easyui-linkbutton" data-options="plain:true,iconCls:'icon-search'"

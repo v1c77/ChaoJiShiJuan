@@ -29,7 +29,7 @@
     </script>
 </head>
 
-<body>
+<body onkeydown="keyLogin();">
 
     <div id="particles">
         <div id="intro">

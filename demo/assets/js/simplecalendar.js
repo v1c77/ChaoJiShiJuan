@@ -14,7 +14,7 @@ var calendar = {
 
           // loop json & append to dom
           for (var i = 0; i < events.length; i++) {
-            $('.list').append('<div class="day-event" date-day="'+ events[i].day +'" date-month="' + events[i].month +'" date-year="'+ events[i].year +'" data-number="'+ i +'"><a href="#" class="close fontawesome-remove"></a><h2 class="title">'+ events[i].title +'</h2><p>'+ events[i].description +'</p><label class="check-btn"><input type="checkbox" class="save" id="save" name="" value=""/><span>Save to personal list!</span></label></div>');
+              $('.list').append('<div class="day-event" date-day="' + events[i].day + '" date-month="' + events[i].month + '" date-year="' + events[i].year + '" data-number="' + i + '"><a href="#" class="close fontawesome-remove simplecala"></a><h2 class="simplecalh2 title">' + events[i].title + '</h2><p>' + events[i].description + '</p><label class="check-btn"><input type="checkbox" class="save simplecalinput" id="save" name="" value=""/></label></div>');
           }
 
           // start calendar

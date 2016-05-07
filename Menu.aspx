@@ -7,7 +7,7 @@
     <title>高校在线考试系统</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <!-- basic styles -->
-    <link rel="shortcut icon" href="demo/LG.png">
+    <link rel="shortcut icon" href="demo/LG.PNG">
 
     <link rel="stylesheet" href="demo/assets/css/font-awesome.min.css" />
     <link rel="stylesheet" href="demo/bootStrap-addTabs/theme/css/bootstrap.min.css" type="text/css" media="screen" />
@@ -511,7 +511,7 @@
 
                                             <div class="alert alert-info alert-dismissible" role="alert">
                                                 <button type="button" class="close" data-dismiss="alert" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-                                                欢迎进入 <strong>超级试卷</strong> - <span style="font-size: 12px;">高校智能多题型在线考试系统</span>
+                                                欢迎进入 <strong>超级试卷</strong> - <span style="font-size: 13px;">高校智能多题型在线考试系统</span>
                                             </div>
 
                                             <div class="row Int" runat="server" id="studentInt">
@@ -626,7 +626,7 @@
                                                                         <asp:Button ID="btnHide" runat="server" Text="" OnClick="btnHide_Click" />
                                                                     </div>
                                                                 </div>
-                                                                <div class="col-sm-6 col-xs-12 col-md-6">
+                                                                <div class="col-sm-6 col-xs-12 col-md-6" style="padding-top:35px;">
                                                                     
                                                                         <div class="calendar hidden-print">
                                                                             <header>
@@ -635,10 +635,10 @@
                                                                                 <a class="btn-next fontawesome-angle-right simplecala" href="#"></a>
                                                                             </header>
                                                                             <table class="simplecaltable">
-                                                                                <thead class="event-days">
+                                                                                <thead class="event-days" style="font-weight:bold;">
                                                                                     <tr></tr>
                                                                                 </thead>
-                                                                                <tbody class="event-calendar">
+                                                                                <tbody class="event-calendar" style="color:#000000;font-weight:600;">
                                                                                     <tr class="1"></tr>
                                                                                     <tr class="2"></tr>
                                                                                     <tr class="3"></tr>
@@ -653,7 +653,7 @@
                                                                                     <p>Lorem Ipsum är en utfyllnadstext från tryck- och förlagsindustrin. Lorem ipsum har varit standard ända sedan 1500-talet, när en okänd boksättare tog att antal bokstäver och blandade dem för att göra ett provexemplar av en bok.</p>
                                                                                     <label class="check-btn">
                                                                                         <input  type="checkbox" class="save simplecalinput" id="save" name="" value="" />
-                                                                                        <span class="simplecalspan">Save to personal list!</span>
+                                                                                        
                                                                                     </label>
                                                                                 </div>
                                                                             </div>
@@ -681,9 +681,7 @@
                                                     </div>-->
                                                     <div class="col-sm-12 col-xs-12" runat="server" id="teacher_static" visible="False">
                                                         <div class="inform">
-                                                            <div class="page-header myPage-header">
-                                                                <h3 style="font-family: SimHei">教师统计分析</h3>
-                                                            </div>
+                                                            
                                                             <div class="row">
                                                                 <div class="col-sm-6 col-xs-12" style="text-align: center;">
                                                                     <asp:Literal ID="class3Comparison" runat="server"></asp:Literal>
@@ -696,9 +694,7 @@
                                                     </div>
                                                     <div class="col-sm-12 col-xs-12" runat="server" id="admin_static" visible="False">
                                                         <div class="inform">
-                                                            <div class="page-header myPage-header">
-                                                                <h3 style="font-family: SimHei">管理员统计</h3>
-                                                            </div>
+                                                            
                                                             <div class="row">
                                                                 <div class="col-sm-6 col-xs-12" style="text-align: center;">
                                                                     <asp:Literal ID="adminweeksignin" runat="server"></asp:Literal>
@@ -711,9 +707,7 @@
                                                     </div>
                                                     <div class="col-sm-12 col-xs-12" runat="server" id="student_static" visible="False">
                                                         <div class="inform">
-                                                            <div class="page-header myPage-header">
-                                                                <h3 style="font-family: SimHei">学生统计</h3>
-                                                            </div>
+                                                            
                                                             <div class="row">
                                                                 <div class="col-sm-6 col-xs-12" style="text-align: center;">
                                                                     <asp:Literal ID="studentError" runat="server"></asp:Literal>
@@ -1072,6 +1066,13 @@
         <script type="text/javascript">
             var _bdhmProtocol = (("https:" == document.location.protocol) ? " https://" : " http://");
             document.write(unescape("%3Cscript src='" + _bdhmProtocol + "hm.baidu.com/h.js%3Fe9e1d61340ff3d9495a8cca04ebdb49d' type='text/javascript'%3E%3C/script%3E"));
+        </script>
+        <script>
+            var $sideBar = $("#sidebar"), $window = $(window), oTop = $sideBar.offset().top, barStyle = $sideBar[0].style, sTop;
+            $window.scroll(function () {
+                sTop = $window.scrollTop();
+                sTop > oTop ? barStyle.top = sTop - oTop + "px" : barStyle.top = 0;
+            })
         </script>
         <!--END-->
     </form>
