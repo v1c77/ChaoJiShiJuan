@@ -1,4 +1,5 @@
-﻿body
+﻿/**
+    body
 {
     font-size:12px;
     background-color:white;
@@ -55,4 +56,16 @@ table.table
     margin-top:10px;
     font-family: 'Microsoft Yahei', 微软雅黑, Tahoma, Aria;
     font-size:14px;
+}
+
+    
+    
+    **/
+
+#pp
+{
+    
+    bottom: 1px;
+    margin-left:15px!important;
+    
 }

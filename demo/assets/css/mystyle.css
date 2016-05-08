@@ -693,9 +693,13 @@ h4 {
 表格样式
 */
 .table_style{width:100%;height:auto;color:rgb(87,97,109);}
-   .table_style tr td{text-align:center;height:30px;line-height:30px;border-color:rgb(237,237,237);}
+   .table_style tr td，.table_style tr th  {text-align:center;height:30px;line-height:30px;border-color:rgb(237,237,237);}
 .table>tbody>tr>td, .table>tbody>tr>th, .table>tfoot>tr>td, .table>tfoot>tr>th, .table>thead>tr>td, .table>thead>tr>th{
 vertical-align:middle;
+text-align:center!important;
+}
+.table_style>tbody>tr>th{
+text-align:center;
 }
 .myForm-control{
   display:inline-block;

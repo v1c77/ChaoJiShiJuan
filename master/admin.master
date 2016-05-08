@@ -6,7 +6,7 @@
     <title></title>
     <link href="~/js/themes/gray/easyui.css" rel="stylesheet" type="text/css" runat="server" />
     <link href="~/js/themes/icon.css" rel="stylesheet" type="text/css" runat="server" />
-    <link href="~/css/all.css" rel="stylesheet" type="text/css" runat="server" />
+     <link href="~/css/all.css" rel="stylesheet" type="text/css" runat="server" />
     <!--新版呦~~-->
       <meta name="viewport" content="width=device-width,initial-scale=1"><!--禁止缩放，启动响应式-->
   <link rel="stylesheet" href="~/demo/bootstrap/css/bootstrap.min.css">
@@ -26,7 +26,7 @@
     </asp:ContentPlaceHolder>
 </head>
 <body>
-    <form id="form1" runat="server">
+    <form id="form1" class="form-inline" runat="server">
     <div>
         <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
         </asp:ContentPlaceHolder>

@@ -2,7 +2,45 @@
     CodeFile="ExerciseList.aspx.cs" Inherits="subject_SubjectList" Title="无标题页" %>
 
 <asp:Content ID="Content1" ContentPlaceHolderID="head" runat="Server">
+    <style>
+  .panel-footer{
+   padding:0;
+   background-color:#FFFFFF;
+   height:34px;
+  }
+  .panel-footer ul{
+   margin:0;
+  }
+  .pagination>li:first-child>a{
+  border-top-left-radius:0;
+  }
+  .pagination>li:last-child>a{
+  border-top-right-radius:0;
+  border-bottom-right-radius:0;
+  }
+  .panel{
+   margin-bottom:5px;
+   border:none;
+   border-color:
+  }
+  .panel-body{
+   padding:0;
+  }
+  .panel-heading{
+   border:none; 
+  }
+  .panel-footer{
+   bottom:0;
+   width:100%;
+  }
+  .table{
+  margin:0;	
+  }
+  .table tr td{
 
+  margin:0;	
+  }
+  </style>
     <script type="text/javascript">
         $(function(){
            $('#oe_iframe').window('close');
