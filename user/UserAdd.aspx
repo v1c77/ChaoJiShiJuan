@@ -30,7 +30,7 @@
                 用户类型：
             </td>
             <td>
-                <asp:DropDownList ID="ddlUserType" runat="server" 
+                 <asp:DropDownList  CssClass="form-control"   ID="ddlUserType" runat="server" 
                     onselectedindexchanged="ddlUserType_SelectedIndexChanged" AutoPostBack="true" Width="160px">
                     <%--<asp:ListItem Value="1" Text="管理员"></asp:ListItem>
                     <asp:ListItem Value="2" Text="教师"></asp:ListItem>
@@ -43,7 +43,7 @@
                 班级：
             </td>
             <td>
-                <asp:DropDownList ID="ddlClass" runat="server" Width="160px" CssClass="easyui-combobox">                    
+                 <asp:DropDownList  CssClass="form-control"   ID="ddlClass" runat="server" Width="160px" >                    
                 </asp:DropDownList>
             </td>
         </tr>

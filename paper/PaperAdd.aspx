@@ -55,7 +55,7 @@
                 科目名：
             </td>
             <td>
-                <asp:DropDownList ID="ddlSubject" runat="server" Width="160px" OnSelectedIndexChanged="ddlSubject_SelectedIndexChanged"
+                 <asp:DropDownList  CssClass="form-control"   ID="ddlSubject" runat="server" Width="160px" OnSelectedIndexChanged="ddlSubject_SelectedIndexChanged"
                     AutoPostBack="true">
                 </asp:DropDownList>
                 <asp:RequiredFieldValidator ID="RequiredFieldValidator1" runat="server" ErrorMessage="*"
@@ -77,7 +77,7 @@
                 时间（分钟）：
             </td>
             <td>
-                <asp:DropDownList ID="ddlDurationTime" runat="server" CssClass="easyui-combobox"
+                 <asp:DropDownList  CssClass="form-control"   ID="ddlDurationTime" runat="server" 
                     Width="160px">
                     <asp:ListItem Text="30" Value="30"></asp:ListItem>
                     <asp:ListItem Text="60" Value="60"></asp:ListItem>
@@ -127,7 +127,7 @@
                             <asp:TextBox ID="txtSRCount" runat="server" Width="100px"></asp:TextBox>
                         </td>
                         <td>
-                            <asp:DropDownList ID="ddlSRScore" runat="server" CssClass="easyui-combobox" Width="100px">
+                             <asp:DropDownList  CssClass="form-control"   ID="ddlSRScore" runat="server"  Width="100px">
                                 <asp:ListItem Text="1" Value="1"></asp:ListItem>
                                 <asp:ListItem Text="2" Value="2" Selected="True"></asp:ListItem>
                                 <asp:ListItem Text="3" Value="3"></asp:ListItem>
@@ -139,7 +139,7 @@
                             </asp:DropDownList>
                         </td>
                         <td>
-                            <asp:DropDownList ID="ddlSRDiff" runat="server" Width="100px">
+                             <asp:DropDownList  CssClass="form-control"   ID="ddlSRDiff" runat="server" Width="100px">
                                 <asp:ListItem Value="1" Text="容易"></asp:ListItem>
                                 <asp:ListItem Value="2" Text="较易"></asp:ListItem>
                                 <asp:ListItem Value="3" Text="一般" Selected="True"></asp:ListItem>
@@ -164,7 +164,7 @@
                             <asp:TextBox ID="txtCBCount" runat="server" Width="100px"></asp:TextBox>
                         </td>
                         <td>
-                            <asp:DropDownList ID="ddlCBScore" runat="server" CssClass="easyui-combobox" Width="100px">
+                             <asp:DropDownList  CssClass="form-control"   ID="ddlCBScore" runat="server"  Width="100px">
                                 <asp:ListItem Text="1" Value="1"></asp:ListItem>
                                 <asp:ListItem Text="2" Value="2" Selected="True"></asp:ListItem>
                                 <asp:ListItem Text="3" Value="3"></asp:ListItem>
@@ -176,7 +176,7 @@
                             </asp:DropDownList>
                         </td>
                         <td>
-                            <asp:DropDownList ID="ddlCBDiff" runat="server" Width="100px">
+                             <asp:DropDownList  CssClass="form-control"   ID="ddlCBDiff" runat="server" Width="100px">
                                 <asp:ListItem Value="1" Text="容易"></asp:ListItem>
                                 <asp:ListItem Value="2" Text="较易"></asp:ListItem>
                                 <asp:ListItem Value="3" Text="一般" Selected="True"></asp:ListItem>
@@ -201,7 +201,7 @@
                             <asp:TextBox ID="txtJDCount" runat="server" Width="100px"></asp:TextBox>
                         </td>
                         <td>
-                            <asp:DropDownList ID="ddlJDScore" runat="server" CssClass="easyui-combobox" Width="100px">
+                             <asp:DropDownList  CssClass="form-control"   ID="ddlJDScore" runat="server" Width="100px">
                                 <asp:ListItem Text="1" Value="1"></asp:ListItem>
                                 <asp:ListItem Text="2" Value="2" Selected="True"></asp:ListItem>
                                 <asp:ListItem Text="3" Value="3"></asp:ListItem>
@@ -213,7 +213,7 @@
                             </asp:DropDownList>
                         </td>
                         <td>
-                            <asp:DropDownList ID="ddlJDDiff" runat="server" Width="100px">
+                             <asp:DropDownList  CssClass="form-control"   ID="ddlJDDiff" runat="server" Width="100px">
                                 <asp:ListItem Value="1" Text="容易"></asp:ListItem>
                                 <asp:ListItem Value="2" Text="较易"></asp:ListItem>
                                 <asp:ListItem Value="3" Text="一般" Selected="True"></asp:ListItem>
@@ -238,7 +238,7 @@
                             <asp:TextBox ID="txtBFCount" runat="server" Width="100px"></asp:TextBox>
                         </td>
                         <td>
-                            <asp:DropDownList ID="ddlBFScore" runat="server" CssClass="easyui-combobox" Width="100px">
+                             <asp:DropDownList  CssClass="form-control"   ID="ddlBFScore" runat="server"  Width="100px">
                                 <asp:ListItem Text="1" Value="1"></asp:ListItem>
                                 <asp:ListItem Text="2" Value="2" Selected="True"></asp:ListItem>
                                 <asp:ListItem Text="3" Value="3"></asp:ListItem>
@@ -250,7 +250,7 @@
                             </asp:DropDownList>
                         </td>
                         <td>
-                            <asp:DropDownList ID="ddlBFDiff" runat="server" Width="100px">
+                             <asp:DropDownList  CssClass="form-control"   ID="ddlBFDiff" runat="server" Width="100px">
                                 <asp:ListItem Value="1" Text="容易"></asp:ListItem>
                                 <asp:ListItem Value="2" Text="较易"></asp:ListItem>
                                 <asp:ListItem Value="3" Text="一般" Selected="True"></asp:ListItem>
@@ -275,7 +275,7 @@
                             <asp:TextBox ID="txtSACount" runat="server" Width="100px"></asp:TextBox>
                         </td>
                         <td>
-                            <asp:DropDownList ID="ddlSAScore" runat="server" CssClass="easyui-combobox" Width="100px">
+                             <asp:DropDownList  CssClass="form-control"   ID="ddlSAScore" runat="server"  Width="100px">
                                 <asp:ListItem Text="1" Value="1"></asp:ListItem>
                                 <asp:ListItem Text="2" Value="2" Selected="True"></asp:ListItem>
                                 <asp:ListItem Text="3" Value="3"></asp:ListItem>
@@ -287,7 +287,7 @@
                             </asp:DropDownList>
                         </td>
                         <td>
-                            <asp:DropDownList ID="ddlSADiff" runat="server" Width="100px">
+                             <asp:DropDownList  CssClass="form-control"   ID="ddlSADiff" runat="server" Width="100px">
                                 <asp:ListItem Value="1" Text="容易"></asp:ListItem>
                                 <asp:ListItem Value="2" Text="较易"></asp:ListItem>
                                 <asp:ListItem Value="3" Text="一般" Selected="True"></asp:ListItem>

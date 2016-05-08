@@ -12,8 +12,8 @@
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" runat="Server">
     <div>
        <div id="box_top" class="panel-heading">
-            学生：<asp:TextBox ID="txtWord" runat="server"></asp:TextBox>
-            <asp:DropDownList ID="ddlScoreStatus" runat="server">
+            学生：<asp:TextBox ID="txtWord" CssClass="form-control"  runat="server"></asp:TextBox>
+             <asp:DropDownList  CssClass="form-control"   ID="ddlScoreStatus" runat="server">
                 <asp:ListItem Text="所有状态" Value="0"></asp:ListItem>
                 <asp:ListItem Text="还没考试" Value="1"></asp:ListItem>
                 <asp:ListItem Text="正在考试" Value="2"></asp:ListItem>
@@ -22,10 +22,10 @@
                 <asp:ListItem Text="等待批改" Value="5"></asp:ListItem>
                 <asp:ListItem Text="重新考试" Value="6"></asp:ListItem>
             </asp:DropDownList>
-            <asp:DropDownList ID="ddlClass" runat="server" Width="160px">
+             <asp:DropDownList  CssClass="form-control"   ID="ddlClass" runat="server" Width="160px">
             </asp:DropDownList>
             <asp:LinkButton ID="lbtnSearch" runat="server" class="btn btn-default" data-options="plain:true,iconCls:'icon-search'"
-                OnClick="lbtnSearch_Click">搜索</asp:LinkButton>
+                OnClick="lbtnSearch_Click"><span class="glyphicon glyphicon-search marginRight" ></span>搜索</asp:LinkButton>
         </div>
         <div class="panel-body" id="box_middle">
             <asp:GridView ID="gvwData" runat="server" runat="server" AutoGenerateColumns="false" CssClass="table table_style"  GridLines="None" 
@@ -34,7 +34,7 @@
                     <asp:TemplateField HeaderText="">
                         <ItemTemplate>
                             <%# Container.DataItemIndex+1+pageSize*(pageIndex-1) %></ItemTemplate>
-                        <ItemStyle CssClass="table_head" />
+                        <ItemStyle  />
                     </asp:TemplateField>
                     <asp:TemplateField HeaderText="班级名">
                         <ItemTemplate>
@@ -65,7 +65,7 @@
                 <EmptyDataTemplate>
                     没有返回任何数据！
                 </EmptyDataTemplate>
-                <HeaderStyle CssClass="table_head" />
+                <HeaderStyle  />
                 <RowStyle HorizontalAlign="Center" />
                 <EmptyDataRowStyle Font-Size="16px" ForeColor="Red" Font-Bold="true" />
             </asp:GridView>

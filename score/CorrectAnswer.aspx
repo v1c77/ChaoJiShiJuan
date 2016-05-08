@@ -66,7 +66,7 @@
                 得分：
             </td>
             <td>
-                <asp:DropDownList ID="ddlGetScore" runat="server" CssClass="easyui-combobox" Width="80px">
+                 <asp:DropDownList  CssClass="form-control"   ID="ddlGetScore" runat="server"  Width="80px">
                 </asp:DropDownList>
             </td>
         </tr>

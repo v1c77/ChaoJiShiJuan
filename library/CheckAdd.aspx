@@ -10,7 +10,7 @@
                 科目名：
             </td>
             <td>
-                <asp:DropDownList ID="ddlSubject" runat="server" Width="160px" AutoPostBack="True"
+                 <asp:DropDownList  CssClass="form-control"   ID="ddlSubject" runat="server" Width="160px" AutoPostBack="True"
                     OnSelectedIndexChanged="ddlSubject_SelectedIndexChanged">
                 </asp:DropDownList>
             </td>
@@ -20,7 +20,7 @@
                 章节名：
             </td>
             <td>
-                <asp:DropDownList ID="ddlChapter" runat="server" Width="160px">
+                 <asp:DropDownList  CssClass="form-control"   ID="ddlChapter" runat="server" Width="160px">
                 </asp:DropDownList>
                 <asp:RequiredFieldValidator ID="RequiredFieldValidator2" runat="server" ErrorMessage="*"
                     ControlToValidate="ddlChapter"></asp:RequiredFieldValidator>
@@ -41,7 +41,7 @@
                 难度：
             </td>
             <td>
-                <asp:DropDownList ID="ddlDiff" runat="server" Width="160px">
+                 <asp:DropDownList  CssClass="form-control"   ID="ddlDiff" runat="server" Width="160px">
                     <asp:ListItem Value="1" Text="容易"></asp:ListItem>
                     <asp:ListItem Value="2" Text="较易"></asp:ListItem>
                     <asp:ListItem Value="3" Text="一般" Selected="True"></asp:ListItem>

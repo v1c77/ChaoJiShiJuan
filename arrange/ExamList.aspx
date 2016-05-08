@@ -123,7 +123,7 @@
                 <div class="panel panel-default" style="height: 100%;">
                     <div id="box_top" class="panel-heading">
                         <asp:TextBox ID="txtWord" CssClass="form-control" placeholder="考试名" runat="server"></asp:TextBox>
-                        <asp:DropDownList CssClass="form-control" ID="ddlSubject" runat="server">
+                         <asp:DropDownList    CssClass="form-control" ID="ddlSubject" runat="server">
                         </asp:DropDownList>
                         <asp:LinkButton ID="lbtnSearch" runat="server" CssClass="btn btn-default"  data-options="plain:true,iconCls:'icon-search'"
                             OnClick="lbtnSearch_Click"><span class="glyphicon glyphicon-search marginRight" ></span>搜索</asp:LinkButton>

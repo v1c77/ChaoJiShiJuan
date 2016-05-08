@@ -16,8 +16,8 @@
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" runat="Server">
     <div id="box" class="panel panel-default" style="height:100%;">
         <div id="box_top" style="height:60px;">
-            学生名：<asp:TextBox ID="txtWord" runat="server"></asp:TextBox>
-            分数<asp:DropDownList ID="ddlRange1" runat="server" CssClass="easyui-combobox" Width="80px">
+            学生名：<asp:TextBox ID="txtWord" CssClass="form-control"  runat="server"></asp:TextBox>
+            分数 <asp:DropDownList  CssClass="form-control"   ID="ddlRange1" runat="server" Width="80px">
                 <asp:ListItem Text="0" Value="0"></asp:ListItem>
                 <asp:ListItem Text="60" Value="60"></asp:ListItem>
                 <asp:ListItem Text="70" Value="80"></asp:ListItem>
@@ -27,7 +27,7 @@
                 <asp:ListItem Text="200" Value="200"></asp:ListItem>
             </asp:DropDownList>
             至
-            <asp:DropDownList ID="ddlRange2" runat="server" CssClass="easyui-combobox" Width="80px">
+             <asp:DropDownList  CssClass="form-control"   ID="ddlRange2" runat="server"  Width="80px">
                 <asp:ListItem Text="60" Value="60"></asp:ListItem>
                 <asp:ListItem Text="70" Value="80"></asp:ListItem>
                 <asp:ListItem Text="90" Value="90"></asp:ListItem>
@@ -35,13 +35,13 @@
                 <asp:ListItem Text="150" Value="150"></asp:ListItem>
                 <asp:ListItem Text="200" Value="200"></asp:ListItem>
             </asp:DropDownList>
-            <asp:DropDownList ID="ddlArrange" runat="server" Width="200px" AutoPostBack="true"
+             <asp:DropDownList  CssClass="form-control"   ID="ddlArrange" runat="server" Width="200px" AutoPostBack="true"
                 OnSelectedIndexChanged="ddlArrange_SelectedIndexChanged">
             </asp:DropDownList>
             <br />
-            <asp:DropDownList ID="ddlClass" runat="server">
+             <asp:DropDownList  CssClass="form-control"   ID="ddlClass" runat="server">
             </asp:DropDownList>
-            <asp:DropDownList ID="ddlScoreStatus" runat="server">
+             <asp:DropDownList  CssClass="form-control"   ID="ddlScoreStatus" runat="server">
                 <asp:ListItem Text="所有状态" Value="0"></asp:ListItem>
                 <asp:ListItem Text="还没考试" Value="1"></asp:ListItem>
                 <asp:ListItem Text="正在考试" Value="2"></asp:ListItem>
@@ -51,7 +51,7 @@
                 <asp:ListItem Text="重新考试" Value="6"></asp:ListItem>
             </asp:DropDownList>
             <asp:LinkButton ID="lbtnSearch" runat="server" class="btn btn-default" data-options="plain:true,iconCls:'icon-search'"
-                OnClick="lbtnSearch_Click">搜索</asp:LinkButton>
+                OnClick="lbtnSearch_Click"><span class="glyphicon glyphicon-search marginRight" ></span>搜索</asp:LinkButton>
             <asp:LinkButton ID="lbtnDelete" runat="server" class="btn btn-default" data-options="plain:true,iconCls:'icon-cancel'"
                 OnClick="lbtnDelete_Click" OnClientClick="return confirm('您确定重考所选的吗？')">重考所选</asp:LinkButton>
             <asp:LinkButton ID="lbtnExport" runat="server" class="btn btn-default" data-options="plain:true,iconCls:'icon-sum'"
@@ -64,16 +64,16 @@
                     <asp:TemplateField HeaderText="">
                         <ItemTemplate>
                             <%# Container.DataItemIndex+1+pageSize*(pageIndex-1) %></ItemTemplate>
-                        <ItemStyle CssClass="table_head" />
+                        <ItemStyle  />
                     </asp:TemplateField>
                     <asp:TemplateField HeaderText="">
                         <HeaderTemplate>
-                            <asp:CheckBox ID="chkbAll" runat="server" CssClass="check_all" />
+                            <asp:CheckBox ID="chkbAll" runat="server"  />
                         </HeaderTemplate>
                         <ItemTemplate>
-                            <asp:CheckBox ID="chkbOne" runat="server" CssClass="check_one" />
+                            <asp:CheckBox ID="chkbOne" runat="server"  />
                         </ItemTemplate>
-                        <ItemStyle CssClass="table_head" />
+                        <ItemStyle  />
                     </asp:TemplateField>
                     <asp:TemplateField HeaderText="班级">
                         <ItemTemplate>
@@ -115,7 +115,7 @@
                 <EmptyDataTemplate>
                     没有返回任何数据！
                 </EmptyDataTemplate>
-                <HeaderStyle CssClass="table_head" />
+                <HeaderStyle  />
                 <RowStyle HorizontalAlign="Center" />
                 <EmptyDataRowStyle Font-Size="16px" ForeColor="Red" Font-Bold="true" />
             </asp:GridView>

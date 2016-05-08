@@ -59,7 +59,7 @@
                 科目：
             </td>
             <td>
-                <asp:DropDownList ID="ddlSubject" runat="server" Width="160px" OnSelectedIndexChanged="ddlSubject_SelectedIndexChanged" AutoPostBack="true">
+                 <asp:DropDownList  CssClass="form-control"   ID="ddlSubject" runat="server" Width="160px" OnSelectedIndexChanged="ddlSubject_SelectedIndexChanged" AutoPostBack="true">
                 </asp:DropDownList>
                 <asp:RangeValidator ID="RangeValidator1" runat="server" ErrorMessage="*" ControlToValidate="ddlSubject"
                     MaximumValue="999999" MinimumValue="1" Type="Integer"></asp:RangeValidator>
@@ -70,7 +70,7 @@
                 试卷：
             </td>
             <td>
-                <asp:DropDownList ID="ddlPaper" runat="server" Width="160px">
+                 <asp:DropDownList  CssClass="form-control"   ID="ddlPaper" runat="server" Width="160px">
                 </asp:DropDownList>
                 <asp:RangeValidator ID="RangeValidator2" runat="server" ErrorMessage="*"
                     ControlToValidate="ddlPaper" MaximumValue="999999" MinimumValue="1" Type="Integer"></asp:RangeValidator>

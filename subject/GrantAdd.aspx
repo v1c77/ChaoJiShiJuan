@@ -10,7 +10,7 @@
                 教师名：
             </td>
             <td>
-                <asp:DropDownList ID="ddlUserName" runat="server" CssClass="easyui-combobox" Width="160px">
+                 <asp:DropDownList  CssClass="form-control"   ID="ddlUserName" runat="server"  Width="160px">
                 </asp:DropDownList>
             </td>
         </tr>
@@ -19,7 +19,7 @@
                 科目名：
             </td>
             <td>
-                <asp:DropDownList ID="ddlSubject" runat="server" CssClass="easyui-combobox" Width="160px">
+                 <asp:DropDownList  CssClass="form-control"   ID="ddlSubject" runat="server"  Width="160px">
                 </asp:DropDownList>
             </td>
         </tr>

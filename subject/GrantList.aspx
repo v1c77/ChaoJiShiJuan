@@ -54,16 +54,16 @@
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" runat="Server">
     <div id="box" class="panel panel-default" style="height:100%;">
        <div id="box_top" class="panel-heading">
-            <asp:DropDownList ID="ddlUserName" runat="server" CssClass="easyui-combobox" Width="160px">
+             <asp:DropDownList  CssClass="form-control"   ID="ddlUserName" runat="server"  Width="160px">
             </asp:DropDownList>
-             <asp:DropDownList ID="ddlSubject" runat="server" CssClass="easyui-combobox" Width="160px">
+              <asp:DropDownList  CssClass="form-control"   ID="ddlSubject" runat="server"  Width="160px">
             </asp:DropDownList>
             <asp:LinkButton ID="lbtnSearch" runat="server" class="btn btn-default" data-options="plain:true,iconCls:'icon-search'"
-                OnClick="lbtnSearch_Click">搜索</asp:LinkButton>
+                OnClick="lbtnSearch_Click"><span class="glyphicon glyphicon-search marginRight" ></span>搜索</asp:LinkButton>
             <asp:LinkButton ID="lbtnAdd" runat="server" class="btn btn-default" data-options="plain:true,iconCls:'icon-add'"
-                OnClientClick="return oe_add();">添加</asp:LinkButton>
+                OnClientClick="return oe_add();"><span class="glyphicon  glyphicon-plus marginRight" ></span>添加</asp:LinkButton>
             <asp:LinkButton ID="lbtnDelete" runat="server" class="btn btn-default" data-options="plain:true,iconCls:'icon-cancel'"
-                OnClick="lbtnDelete_Click" OnClientClick="return confirm('您确定删除所选的吗？')">删除所选</asp:LinkButton>
+                OnClick="lbtnDelete_Click" OnClientClick="return confirm('您确定删除所选的吗？')"><span class="glyphicon glyphicon-remove marginRight" ></span>删除所选</asp:LinkButton>
         </div>
         <div class="panel-body" id="box_middle">
             <asp:GridView ID="gvwData" runat="server" runat="server" AutoGenerateColumns="false" CssClass="table table_style"  GridLines="None" 
@@ -72,16 +72,16 @@
                     <asp:TemplateField HeaderText="">
                         <ItemTemplate>
                             <%# Container.DataItemIndex+1+pageSize*(pageIndex-1) %></ItemTemplate>
-                        <ItemStyle CssClass="table_head" />
+                        <ItemStyle  />
                     </asp:TemplateField>
                     <asp:TemplateField HeaderText="">
                         <HeaderTemplate>
-                            <asp:CheckBox ID="chkbAll" runat="server" CssClass="check_all" />
+                            <asp:CheckBox ID="chkbAll" runat="server"  />
                         </HeaderTemplate>
                         <ItemTemplate>
-                            <asp:CheckBox ID="chkbOne" runat="server" CssClass="check_one" />
+                            <asp:CheckBox ID="chkbOne" runat="server"  />
                         </ItemTemplate>
-                        <ItemStyle CssClass="table_head" />
+                        <ItemStyle  />
                     </asp:TemplateField>
                     <asp:TemplateField HeaderText="教师名">
                         <ItemTemplate>
@@ -108,7 +108,7 @@
                 <EmptyDataTemplate>
                     没有返回任何数据！
                 </EmptyDataTemplate>
-                <HeaderStyle  CssClass="table_head"/>
+                <HeaderStyle  />
                 <RowStyle HorizontalAlign="Center" />
                 <EmptyDataRowStyle Font-Size="16px" ForeColor="Red" Font-Bold="true" />
             </asp:GridView>

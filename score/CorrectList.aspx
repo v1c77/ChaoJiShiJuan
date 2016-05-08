@@ -33,11 +33,11 @@
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" runat="Server">
     <div id="box" class="panel panel-default" style="height:100%;">
        <div id="box_top" class="panel-heading">
-            考试名：<asp:TextBox ID="txtWord" runat="server"></asp:TextBox>
-            <asp:DropDownList ID="ddlSubject" runat="server" Width="160px">
+            考试名：<asp:TextBox ID="txtWord" CssClass="form-control"  runat="server"></asp:TextBox>
+             <asp:DropDownList  CssClass="form-control"   ID="ddlSubject" runat="server" Width="160px">
             </asp:DropDownList>
             <asp:LinkButton ID="lbtnSearch" runat="server" class="btn btn-default" data-options="plain:true,iconCls:'icon-search'"
-                OnClick="lbtnSearch_Click">搜索</asp:LinkButton>
+                OnClick="lbtnSearch_Click"><span class="glyphicon glyphicon-search marginRight" ></span>搜索</asp:LinkButton>
         </div>
         <div class="panel-body" id="box_middle">
             <asp:GridView ID="gvwData" runat="server" runat="server" AutoGenerateColumns="false" CssClass="table table_style"  GridLines="None" 
@@ -46,7 +46,7 @@
                     <asp:TemplateField HeaderText="">
                         <ItemTemplate>
                             <%# Container.DataItemIndex+1+pageSize*(pageIndex-1) %></ItemTemplate>
-                        <ItemStyle CssClass="table_head" />
+                        <ItemStyle  />
                     </asp:TemplateField>
                     <asp:TemplateField HeaderText="科目名">
                         <ItemTemplate>
@@ -83,7 +83,7 @@
                 <EmptyDataTemplate>
                     没有需要批改的简答题！
                 </EmptyDataTemplate>
-                <HeaderStyle CssClass="table_head" />
+                <HeaderStyle  />
                 <RowStyle HorizontalAlign="Center" />
                 <EmptyDataRowStyle Font-Size="16px" ForeColor="Red" Font-Bold="true" />
             </asp:GridView>

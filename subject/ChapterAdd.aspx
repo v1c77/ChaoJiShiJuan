@@ -10,7 +10,7 @@
                 科目名：
             </td>
             <td>
-                <asp:DropDownList ID="ddlSubject" runat="server" CssClass="easyui-combobox" Width="160px">
+                 <asp:DropDownList  CssClass="form-control"   ID="ddlSubject" runat="server" Width="160px">
                 </asp:DropDownList>
             </td>
         </tr>
@@ -19,7 +19,7 @@
                 章节名：
             </td>
             <td>
-                <asp:DropDownList ID="ddlChapterNO" runat="server" CssClass="easyui-combobox" Width="160px">
+                 <asp:DropDownList  CssClass="form-control"   ID="ddlChapterNO" runat="server"  Width="160px">
                     <asp:ListItem Text="第1章" Value="1"></asp:ListItem>
                     <asp:ListItem Text="第2章" Value="2"></asp:ListItem>
                     <asp:ListItem Text="第3章" Value="3"></asp:ListItem>

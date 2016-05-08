@@ -2,45 +2,7 @@
     CodeFile="ExerciseList.aspx.cs" Inherits="subject_SubjectList" Title="无标题页" %>
 
 <asp:Content ID="Content1" ContentPlaceHolderID="head" runat="Server">
-   <style>
-  .panel-footer{
-   padding:0;
-   background-color:#FFFFFF;
-   height:34px;
-  }
-  .panel-footer ul{
-   margin:0;
-  }
-  .pagination>li:first-child>a{
-  border-top-left-radius:0;
-  }
-  .pagination>li:last-child>a{
-  border-top-right-radius:0;
-  border-bottom-right-radius:0;
-  }
-  .panel{
-   margin-bottom:5px;
-   border:none;
-   border-color:
-  }
-  .panel-body{
-   padding:0;
-  }
-  .panel-heading{
-   border:none; 
-  }
-  .panel-footer{
-   bottom:0;
-   width:100%;
-  }
-  .table{
-  margin:0;	
-  }
-  .table tr td{
-
-  margin:0;	
-  }
-  </style>
+   
      <style>
   .panel-footer{
    padding:0;
@@ -135,7 +97,7 @@
      <div id="box" class="panel panel-default" style="height:100%;">
        <div id="box_top" class="panel-heading">
             <asp:TextBox ID="txtWord" CssClass="form-control" placeholder="考试名" runat="server"></asp:TextBox>
-            <asp:DropDownList ID="ddlSubject" runat="server" CssClass="form-control">
+             <asp:DropDownList  ID="ddlSubject" runat="server" CssClass="form-control">
             </asp:DropDownList>
            <div class="btn-group" role="group">
             <asp:LinkButton ID="lbtnSearch" runat="server" class="btn btn-default" data-options="plain:true,iconCls:'icon-search'"
@@ -154,16 +116,16 @@
                     <asp:TemplateField HeaderText="">
                         <ItemTemplate>
                             <%# Container.DataItemIndex+1+pageSize*(pageIndex-1) %></ItemTemplate>
-                        <ItemStyle CssClass="table_head" />
+                        <ItemStyle  />
                     </asp:TemplateField>
                     <asp:TemplateField HeaderText="">
                         <HeaderTemplate>
-                            <asp:CheckBox ID="chkbAll" runat="server" CssClass="check_all" />
+                            <asp:CheckBox ID="chkbAll" runat="server"  />
                         </HeaderTemplate>
                         <ItemTemplate>
-                            <asp:CheckBox ID="chkbOne" runat="server" CssClass="check_one" />
+                            <asp:CheckBox ID="chkbOne" runat="server"  />
                         </ItemTemplate>
-                        <ItemStyle CssClass="table_head" />
+                        <ItemStyle  />
                     </asp:TemplateField>
                     <asp:TemplateField HeaderText="科目名">
                         <ItemTemplate>
@@ -200,7 +162,7 @@
                 <EmptyDataTemplate>
                     没有返回任何数据！
                 </EmptyDataTemplate>
-                <HeaderStyle CssClass="table_head" />
+                <HeaderStyle  />
                 <RowStyle HorizontalAlign="Center" />
                 <EmptyDataRowStyle Font-Size="16px" ForeColor="Red" Font-Bold="true" />
             </asp:GridView>
