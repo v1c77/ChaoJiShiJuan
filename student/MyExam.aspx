@@ -5,15 +5,15 @@
 
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" runat="Server">
-    <div id="box">
-        <div id="box_top">
+    <div id="box" class="panel panel-default" style="height:100%;">
+       <div id="box_top" class="panel-heading">
             <asp:DropDownList ID="ddlSubject" runat="server">
             </asp:DropDownList>
-            <asp:LinkButton ID="lbtnSearch" runat="server" CssClass="easyui-linkbutton" data-options="plain:true,iconCls:'icon-search'"
+            <asp:LinkButton ID="lbtnSearch" runat="server" class="btn btn-default" data-options="plain:true,iconCls:'icon-search'"
                 OnClick="lbtnSearch_Click">搜索</asp:LinkButton>
         </div>
-        <div id="box_middle">
-            <asp:GridView ID="gvwData" runat="server" AutoGenerateColumns="false" CssClass="table"
+        <div class="panel-body" id="box_middle">
+            <asp:GridView ID="gvwData" runat="server" runat="server" AutoGenerateColumns="false" CssClass="table table_style"  GridLines="None" 
                 HorizontalAlign="Center" onrowdatabound="gvwData_RowDataBound">
                 <Columns>
                     <asp:TemplateField HeaderText="">
@@ -53,7 +53,7 @@
                     </asp:TemplateField>
                     <asp:TemplateField HeaderText="操作">
                         <ItemTemplate>
-                            <asp:LinkButton ID="lbtnEdit" runat="server" CssClass="easyui-linkbutton" data-options="plain:true,iconCls:'icon-no'"
+                            <asp:LinkButton ID="lbtnEdit" runat="server" class="btn btn-default" data-options="plain:true,iconCls:'icon-no'"
                                 CommandArgument='<%#Eval("id") %>' OnClick="lbtnEdit_Click" OnClientClick="return confirm('你确定现在进行考试吗？')">进入考试</asp:LinkButton>
                         </ItemTemplate>
                     </asp:TemplateField>

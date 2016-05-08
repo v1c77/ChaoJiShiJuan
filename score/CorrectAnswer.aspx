@@ -81,7 +81,7 @@
             <td>
             </td>
             <td>
-                <asp:LinkButton ID="lbtnAdd" runat="server" CssClass="easyui-linkbutton" data-options="iconCls:'icon-save'"
+                <asp:LinkButton ID="lbtnAdd" runat="server" class="btn btn-default" data-options="iconCls:'icon-save'"
                     OnClick="lbtnAdd_Click">保存并批改下一条</asp:LinkButton>
             </td>
         </tr>

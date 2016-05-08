@@ -14,7 +14,7 @@
     </style>
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" runat="Server">
-    <div id="box">
+    <div id="box" class="panel panel-default" style="height:100%;">
         <div id="box_top" style="height:60px;">
             学生名：<asp:TextBox ID="txtWord" runat="server"></asp:TextBox>
             分数<asp:DropDownList ID="ddlRange1" runat="server" CssClass="easyui-combobox" Width="80px">
@@ -50,15 +50,15 @@
                 <asp:ListItem Text="等待批改" Value="5"></asp:ListItem>
                 <asp:ListItem Text="重新考试" Value="6"></asp:ListItem>
             </asp:DropDownList>
-            <asp:LinkButton ID="lbtnSearch" runat="server" CssClass="easyui-linkbutton" data-options="plain:true,iconCls:'icon-search'"
+            <asp:LinkButton ID="lbtnSearch" runat="server" class="btn btn-default" data-options="plain:true,iconCls:'icon-search'"
                 OnClick="lbtnSearch_Click">搜索</asp:LinkButton>
-            <asp:LinkButton ID="lbtnDelete" runat="server" CssClass="easyui-linkbutton" data-options="plain:true,iconCls:'icon-cancel'"
+            <asp:LinkButton ID="lbtnDelete" runat="server" class="btn btn-default" data-options="plain:true,iconCls:'icon-cancel'"
                 OnClick="lbtnDelete_Click" OnClientClick="return confirm('您确定重考所选的吗？')">重考所选</asp:LinkButton>
-            <asp:LinkButton ID="lbtnExport" runat="server" CssClass="easyui-linkbutton" data-options="plain:true,iconCls:'icon-sum'"
+            <asp:LinkButton ID="lbtnExport" runat="server" class="btn btn-default" data-options="plain:true,iconCls:'icon-sum'"
                 OnClick="lbtnExport_Click">导出</asp:LinkButton>
         </div>
-        <div id="box_middle">
-            <asp:GridView ID="gvwData" runat="server" AutoGenerateColumns="false" CssClass="table"
+        <div class="panel-body" id="box_middle">
+            <asp:GridView ID="gvwData" runat="server" runat="server" AutoGenerateColumns="false" CssClass="table table_style"  GridLines="None" 
                 HorizontalAlign="Center" OnRowDataBound="gvwData_RowDataBound">
                 <Columns>
                     <asp:TemplateField HeaderText="">
@@ -107,7 +107,7 @@
                     </asp:TemplateField>
                     <asp:TemplateField HeaderText="操作">
                         <ItemTemplate>
-                            <asp:LinkButton ID="lbtnEdit" runat="server" CssClass="easyui-linkbutton" data-options="plain:true,iconCls:'icon-cut'"
+                            <asp:LinkButton ID="lbtnEdit" runat="server" class="btn btn-default" data-options="plain:true,iconCls:'icon-cut'"
                                 CommandArgument='<%#Eval("id") %>' OnClick="lbtnEdit_Click" OnClientClick="return confirm('您确定允许该学生重考的吗？')">重考</asp:LinkButton>
                         </ItemTemplate>
                     </asp:TemplateField>

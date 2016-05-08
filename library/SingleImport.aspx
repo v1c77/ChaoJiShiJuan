@@ -14,11 +14,11 @@
                     ControlToValidate="fulImport"></asp:RequiredFieldValidator>&nbsp;&nbsp;
             </td>
             <td>
-                <asp:LinkButton ID="btnImport" runat="server" CssClass="easyui-linkbutton" data-options="iconCls:'icon-help'"
+                <asp:LinkButton ID="btnImport" runat="server" class="btn btn-default" data-options="iconCls:'icon-help'"
                     OnClick="btnImport_Click">导入</asp:LinkButton>
             </td>
             <td>
-                <asp:LinkButton ID="btnDownload1" runat="server" CssClass="easyui-linkbutton" OnClick="btnDownload1_Click" CausesValidation="false">模板下载</asp:LinkButton>
+                <asp:LinkButton ID="btnDownload1" runat="server" class="btn btn-default" OnClick="btnDownload1_Click" CausesValidation="false">模板下载</asp:LinkButton>
             </td>
         </tr>
     </table>

@@ -137,7 +137,7 @@
                 <div class="panel-body" id="box_middle">
                     <div class="table-responsive">
                 <asp:GridView ID="gvwData" runat="server" AutoGenerateColumns="false" CssClass="table table_style"
-                    HorizontalAlign="Center"  BorderColor="White" >
+                    HorizontalAlign="Center"  BorderColor="White" GridLines="None">
                     <Columns>
                         <asp:TemplateField HeaderText="" ControlStyle-BorderColor="White" ControlStyle-BorderWidth="0">
                             <ItemTemplate>

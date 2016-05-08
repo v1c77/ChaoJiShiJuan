@@ -2,7 +2,46 @@
     CodeFile="ExerciseList.aspx.cs" Inherits="subject_SubjectList" Title="无标题页" %>
 
 <asp:Content ID="Content1" ContentPlaceHolderID="head" runat="Server">
-    <style>
+   <style>
+  .panel-footer{
+   padding:0;
+   background-color:#FFFFFF;
+   height:34px;
+  }
+  .panel-footer ul{
+   margin:0;
+  }
+  .pagination>li:first-child>a{
+  border-top-left-radius:0;
+  }
+  .pagination>li:last-child>a{
+  border-top-right-radius:0;
+  border-bottom-right-radius:0;
+  }
+  .panel{
+   margin-bottom:5px;
+   border:none;
+   border-color:
+  }
+  .panel-body{
+   padding:0;
+  }
+  .panel-heading{
+   border:none; 
+  }
+  .panel-footer{
+   bottom:0;
+   width:100%;
+  }
+  .table{
+  margin:0;	
+  }
+  .table tr td{
+
+  margin:0;	
+  }
+  </style>
+     <style>
   .panel-footer{
    padding:0;
    background-color:#FFFFFF;
@@ -90,20 +129,26 @@
 
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" runat="Server">
-    <div id="box">
-        <div id="box_top">
-            练习名：<asp:TextBox ID="txtWord" runat="server"></asp:TextBox>
-            <asp:DropDownList ID="ddlSubject" runat="server" Width="160px">
+   <div  class="container-fluid" >
+	<div  class="row">
+		<div  class="col-sm-12 col-xs-12 ">	 
+     <div id="box" class="panel panel-default" style="height:100%;">
+       <div id="box_top" class="panel-heading">
+            <asp:TextBox ID="txtWord" CssClass="form-control" placeholder="考试名" runat="server"></asp:TextBox>
+            <asp:DropDownList ID="ddlSubject" runat="server" CssClass="form-control">
             </asp:DropDownList>
-            <asp:LinkButton ID="lbtnSearch" runat="server" CssClass="easyui-linkbutton" data-options="plain:true,iconCls:'icon-search'"
-                OnClick="lbtnSearch_Click">搜索</asp:LinkButton>
-            <asp:LinkButton ID="lbtnAdd" runat="server" CssClass="easyui-linkbutton" data-options="plain:true,iconCls:'icon-add'"
-                OnClientClick="return oe_add();">添加</asp:LinkButton>
-            <asp:LinkButton ID="lbtnDelete" runat="server" CssClass="easyui-linkbutton" data-options="plain:true,iconCls:'icon-cancel'"
-                OnClick="lbtnDelete_Click" OnClientClick="return confirm('您确定删除所选的吗？')">删除所选</asp:LinkButton>
+           <div class="btn-group" role="group">
+            <asp:LinkButton ID="lbtnSearch" runat="server" class="btn btn-default" data-options="plain:true,iconCls:'icon-search'"
+                OnClick="lbtnSearch_Click"><span class="glyphicon glyphicon-search marginRight" ></span>搜索</asp:LinkButton>
+            <asp:LinkButton ID="lbtnAdd" runat="server" class="btn btn-default" data-options="plain:true,iconCls:'icon-add'"
+                OnClientClick="return oe_add();"><span class="glyphicon  glyphicon-plus marginRight" ></span>添加</asp:LinkButton>
+            <asp:LinkButton ID="lbtnDelete" runat="server" class="btn btn-default" data-options="plain:true,iconCls:'icon-cancel'"
+                OnClick="lbtnDelete_Click" OnClientClick="return confirm('您确定删除所选的吗？')"><span class="glyphicon glyphicon-remove marginRight" ></span>删除所选</asp:LinkButton>
+                </div>
         </div>
-        <div id="box_middle">
-            <asp:GridView ID="gvwData" runat="server" AutoGenerateColumns="false" CssClass="table"
+        <div class="panel-body" id="box_middle">
+            <div class="table-responsive">
+            <asp:GridView ID="gvwData" runat="server" runat="server" AutoGenerateColumns="false" CssClass="table table_style"  GridLines="None" 
                 HorizontalAlign="Center">
                 <Columns>
                     <asp:TemplateField HeaderText="">
@@ -147,7 +192,7 @@
                     </asp:TemplateField>
                     <asp:TemplateField HeaderText="操作">
                         <ItemTemplate>
-                            <asp:LinkButton ID="lbtnEdit" runat="server" CssClass="easyui-linkbutton" data-options="plain:true,iconCls:'icon-cut'"
+                            <asp:LinkButton ID="lbtnEdit" runat="server" class="btn btn-default" data-options="plain:true,iconCls:'icon-cut'"
                                 CommandArgument='<%#Eval("id") %>' OnClick="lbtnEdit_Click">编辑练习</asp:LinkButton>
                         </ItemTemplate>
                     </asp:TemplateField>
@@ -160,7 +205,11 @@
                 <EmptyDataRowStyle Font-Size="16px" ForeColor="Red" Font-Bold="true" />
             </asp:GridView>
         </div>
+            </div>
     </div>
+            </div>
+	</div>
+ </div>
     <div id="pp" class="easyui-pagination" style="background: #efefef; border: 1px solid #ccc;"
         data-options="  
         total:<%=pageTotal%>,

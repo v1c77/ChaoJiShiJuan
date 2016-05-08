@@ -569,8 +569,8 @@
                                                                     </div>
 
                                                                     <div class="table-responsive">
-                                                                        <asp:GridView ID="gvwData" runat="server" AutoGenerateColumns="false" CssClass="table"
-                                                                            GridLines="None">
+                                                                        <asp:GridView ID="gvwData" runat="server" runat="server" AutoGenerateColumns="false" CssClass="table table_style"  GridLines="None" 
+                                                                            >
                                                                             <Columns>
                                                                                 <asp:TemplateField HeaderText="序号">
                                                                                     <ItemTemplate>

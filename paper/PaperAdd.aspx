@@ -148,7 +148,7 @@
                             </asp:DropDownList>
                         </td>
                         <td>
-                            <asp:LinkButton ID="txtSRSet" runat="server" OnClick="txtSRSet_Click" CssClass="easyui-linkbutton">设置</asp:LinkButton>
+                            <asp:LinkButton ID="txtSRSet" runat="server" OnClick="txtSRSet_Click" class="btn btn-default">设置</asp:LinkButton>
                         </td>
                         <td id="SRCount">
                         </td>
@@ -185,7 +185,7 @@
                             </asp:DropDownList>
                         </td>
                         <td>
-                            <asp:LinkButton ID="txtCBSet" runat="server" OnClick="txtCBSet_Click" CssClass="easyui-linkbutton">设置</asp:LinkButton>
+                            <asp:LinkButton ID="txtCBSet" runat="server" OnClick="txtCBSet_Click" class="btn btn-default">设置</asp:LinkButton>
                         </td>
                         <td id="CBCount">
                         </td>
@@ -222,7 +222,7 @@
                             </asp:DropDownList>
                         </td>
                         <td>
-                            <asp:LinkButton ID="txtJDSet" runat="server" OnClick="txtJDSet_Click" CssClass="easyui-linkbutton">设置</asp:LinkButton>
+                            <asp:LinkButton ID="txtJDSet" runat="server" OnClick="txtJDSet_Click" class="btn btn-default">设置</asp:LinkButton>
                         </td>
                         <td id="JDCount">
                         </td>
@@ -259,7 +259,7 @@
                             </asp:DropDownList>
                         </td>
                         <td>
-                            <asp:LinkButton ID="txtBFSet" runat="server" OnClick="txtBFSet_Click" CssClass="easyui-linkbutton">设置</asp:LinkButton>
+                            <asp:LinkButton ID="txtBFSet" runat="server" OnClick="txtBFSet_Click" class="btn btn-default">设置</asp:LinkButton>
                         </td>
                         <td id="BFCount">
                         </td>
@@ -296,7 +296,7 @@
                             </asp:DropDownList>
                         </td>
                         <td>
-                            <asp:LinkButton ID="txtSASet" runat="server" OnClick="txtSASet_Click" CssClass="easyui-linkbutton">设置</asp:LinkButton>
+                            <asp:LinkButton ID="txtSASet" runat="server" OnClick="txtSASet_Click" class="btn btn-default">设置</asp:LinkButton>
                         </td>
                         <td id="SACount">
                         </td>
@@ -333,7 +333,7 @@
             </td>
             <td>
                 <a href="#" class="easyui-linkbutton" onclick="return compute()" data-options="iconCls:'icon-print'">计算</a>
-                <asp:LinkButton ID="lbtnAdd" runat="server" CssClass="easyui-linkbutton" data-options="iconCls:'icon-save'"
+                <asp:LinkButton ID="lbtnAdd" runat="server" class="btn btn-default" data-options="iconCls:'icon-save'"
                     OnClick="lbtnAdd_Click" OnClientClick="return checkall()">保存</asp:LinkButton>
             </td>
         </tr>

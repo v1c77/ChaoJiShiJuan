@@ -56,8 +56,8 @@
 
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" runat="Server">
-    <div id="box">
-        <div id="box_top">
+    <div id="box" class="panel panel-default" style="height:100%;">
+       <div id="box_top" class="panel-heading">
             试卷标题：<asp:TextBox ID="txtWord" runat="server"></asp:TextBox>
             <asp:DropDownList ID="ddlSubject" runat="server" Width="160px" CssClass="easyui-combobox">
             </asp:DropDownList>
@@ -66,17 +66,17 @@
                 <asp:ListItem Value="1" Text="随机"></asp:ListItem>
                 <asp:ListItem Value="2" Text="固定"></asp:ListItem>
             </asp:DropDownList>
-            <asp:LinkButton ID="lbtnSearch" runat="server" CssClass="easyui-linkbutton" data-options="plain:true,iconCls:'icon-search'"
+            <asp:LinkButton ID="lbtnSearch" runat="server" class="btn btn-default" data-options="plain:true,iconCls:'icon-search'"
                 OnClick="lbtnSearch_Click">搜索</asp:LinkButton>
-            <asp:LinkButton ID="lbtnAdd" runat="server" CssClass="easyui-linkbutton" data-options="plain:true,iconCls:'icon-add'"
+            <asp:LinkButton ID="lbtnAdd" runat="server" class="btn btn-default" data-options="plain:true,iconCls:'icon-add'"
                 OnClientClick="return oe_add();">添加随机试卷</asp:LinkButton>
-            <asp:LinkButton ID="lbtnImport" runat="server" CssClass="easyui-linkbutton" data-options="plain:true,iconCls:'icon-help'"
+            <asp:LinkButton ID="lbtnImport" runat="server" class="btn btn-default" data-options="plain:true,iconCls:'icon-help'"
                 OnClientClick="return oe_import();">导入固定试卷</asp:LinkButton>
-            <asp:LinkButton ID="lbtnDelete" runat="server" CssClass="easyui-linkbutton" data-options="plain:true,iconCls:'icon-cancel'"
+            <asp:LinkButton ID="lbtnDelete" runat="server" class="btn btn-default" data-options="plain:true,iconCls:'icon-cancel'"
                 OnClick="lbtnDelete_Click" OnClientClick="return confirm('您确定删除所选的吗？')">删除所选</asp:LinkButton>
         </div>
-        <div id="box_middle">
-            <asp:GridView ID="gvwData" runat="server" AutoGenerateColumns="false" CssClass="table"
+        <div class="panel-body" id="box_middle">
+            <asp:GridView ID="gvwData" runat="server" runat="server" AutoGenerateColumns="false" CssClass="table table_style"  GridLines="None" 
                 HorizontalAlign="Center" onrowdatabound="gvwData_RowDataBound">
                 <Columns>
                     <asp:TemplateField HeaderText="">
@@ -125,7 +125,7 @@
                     </asp:TemplateField>
                     <asp:TemplateField HeaderText="操作">
                         <ItemTemplate>
-                            <asp:LinkButton ID="lbtnEdit" runat="server" CssClass="easyui-linkbutton" data-options="plain:true,iconCls:'icon-cut'"
+                            <asp:LinkButton ID="lbtnEdit" runat="server" class="btn btn-default" data-options="plain:true,iconCls:'icon-cut'"
                                 CommandArgument='<%#Eval("id") %>' OnClick="lbtnEdit_Click">编辑试卷</asp:LinkButton>
                         </ItemTemplate>
                     </asp:TemplateField>

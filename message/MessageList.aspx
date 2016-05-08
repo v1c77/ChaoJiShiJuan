@@ -4,16 +4,16 @@
 <asp:Content ID="Content1" ContentPlaceHolderID="head" runat="Server">
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" runat="Server">
-    <div id="box">
-        <div id="box_top">
+    <div id="box" class="panel panel-default" style="height:100%;">
+       <div id="box_top" class="panel-heading">
             标题或内容：<asp:TextBox ID="txtWord" runat="server"></asp:TextBox>
-            <asp:LinkButton ID="lbtnSearch" runat="server" CssClass="easyui-linkbutton" data-options="plain:true,iconCls:'icon-search'"
+            <asp:LinkButton ID="lbtnSearch" runat="server" class="btn btn-default" data-options="plain:true,iconCls:'icon-search'"
                 OnClick="lbtnSearch_Click">搜索</asp:LinkButton>
-            <asp:LinkButton ID="lbtnDelete" runat="server" CssClass="easyui-linkbutton" data-options="plain:true,iconCls:'icon-cancel'"
+            <asp:LinkButton ID="lbtnDelete" runat="server" class="btn btn-default" data-options="plain:true,iconCls:'icon-cancel'"
                 OnClick="lbtnDelete_Click" OnClientClick="return confirm('您确定删除所选的吗？')">删除所选</asp:LinkButton>
         </div>
-        <div id="box_middle">
-            <asp:GridView ID="gvwData" runat="server" AutoGenerateColumns="false" CssClass="table"
+        <div class="panel-body" id="box_middle">
+            <asp:GridView ID="gvwData" runat="server" runat="server" AutoGenerateColumns="false" CssClass="table table_style"  GridLines="None" 
                 HorizontalAlign="Center">
                 <Columns>
                     <asp:TemplateField HeaderText="">

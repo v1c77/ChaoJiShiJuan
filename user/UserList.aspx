@@ -71,8 +71,8 @@
     </script>
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" runat="Server">
-    <div id="box">
-        <div id="box_top">        
+    <div id="box" class="panel panel-default" style="height:100%;">
+       <div id="box_top" class="panel-heading">        
             登录名：<asp:TextBox ID="txtWord" runat="server"></asp:TextBox> 
             <asp:DropDownList ID="ddlUsertType" runat="server" CssClass="easyui-combobox" Width="160px">
                <asp:ListItem Value="0" Text="所有"></asp:ListItem>
@@ -80,17 +80,17 @@
                <asp:ListItem Value="2" Text="教师"></asp:ListItem>
                <asp:ListItem Value="3" Text="学生"></asp:ListItem>
             </asp:DropDownList>
-            <asp:LinkButton ID="lbtnSearch" runat="server" CssClass="easyui-linkbutton" 
+            <asp:LinkButton ID="lbtnSearch" runat="server" class="btn btn-default" 
                 data-options="plain:true,iconCls:'icon-search'" onclick="lbtnSearch_Click">搜索</asp:LinkButton>  
-            <asp:LinkButton ID="lbtnAdd" runat="server" CssClass="easyui-linkbutton" data-options="plain:true,iconCls:'icon-add'" OnClientClick="return oe_add();">添加</asp:LinkButton>   
-            <asp:LinkButton ID="lbtnImport" runat="server" CssClass="easyui-linkbutton" data-options="plain:true,iconCls:'icon-help'" OnClientClick="return oe_import();">导入</asp:LinkButton>                     
-            <asp:LinkButton ID="lbtnExport" runat="server" CssClass="easyui-linkbutton" 
+            <asp:LinkButton ID="lbtnAdd" runat="server" class="btn btn-default" data-options="plain:true,iconCls:'icon-add'" OnClientClick="return oe_add();">添加</asp:LinkButton>   
+            <asp:LinkButton ID="lbtnImport" runat="server" class="btn btn-default" data-options="plain:true,iconCls:'icon-help'" OnClientClick="return oe_import();">导入</asp:LinkButton>                     
+            <asp:LinkButton ID="lbtnExport" runat="server" class="btn btn-default" 
                 data-options="plain:true,iconCls:'icon-sum'" onclick="lbtnExport_Click">导出</asp:LinkButton>                                       
-            <asp:LinkButton ID="lbtnDelete" runat="server" CssClass="easyui-linkbutton" 
+            <asp:LinkButton ID="lbtnDelete" runat="server" class="btn btn-default" 
                 data-options="plain:true,iconCls:'icon-cancel'" onclick="lbtnDelete_Click" OnClientClick="return confirm('您确定删除所选的吗？')">删除所选</asp:LinkButton>
         </div>
-        <div id="box_middle">
-            <asp:GridView ID="gvwData" runat="server" AutoGenerateColumns="false" CssClass="table"
+        <div class="panel-body" id="box_middle">
+            <asp:GridView ID="gvwData" runat="server" runat="server" AutoGenerateColumns="false" CssClass="table table_style"  GridLines="None" 
                 HorizontalAlign="Center" onrowdatabound="gvwData_RowDataBound">
                 <Columns>
                     <asp:TemplateField HeaderText="">
@@ -129,8 +129,8 @@
                     </asp:TemplateField>
                     <asp:TemplateField HeaderText="操作">
                         <ItemTemplate>
-                            <asp:LinkButton ID="lbtnEdit" runat="server" CssClass="easyui-linkbutton" data-options="plain:true,iconCls:'icon-cut'" CommandArgument='<%#Eval("id") %>' OnClick="lbtnEdit_Click">编辑用户</asp:LinkButton>                                                          
-                            <asp:LinkButton ID="lbtnReset" runat="server" CssClass="easyui-linkbutton" data-options="plain:true,iconCls:'icon-redo'" CommandArgument='<%#Eval("id") %>' OnClick="lbtnReset_Click" OnClientClick="return confirm('您确定要重置吗？')">重置密码</asp:LinkButton>
+                            <asp:LinkButton ID="lbtnEdit" runat="server" class="btn btn-default" data-options="plain:true,iconCls:'icon-cut'" CommandArgument='<%#Eval("id") %>' OnClick="lbtnEdit_Click">编辑用户</asp:LinkButton>                                                          
+                            <asp:LinkButton ID="lbtnReset" runat="server" class="btn btn-default" data-options="plain:true,iconCls:'icon-redo'" CommandArgument='<%#Eval("id") %>' OnClick="lbtnReset_Click" OnClientClick="return confirm('您确定要重置吗？')">重置密码</asp:LinkButton>
                         </ItemTemplate>
                     </asp:TemplateField>
                 </Columns>

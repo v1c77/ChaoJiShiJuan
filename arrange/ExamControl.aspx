@@ -11,7 +11,7 @@
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" runat="Server">
     <div>
-        <div id="box_top">
+       <div id="box_top" class="panel-heading">
             学生：<asp:TextBox ID="txtWord" runat="server"></asp:TextBox>
             <asp:DropDownList ID="ddlScoreStatus" runat="server">
                 <asp:ListItem Text="所有状态" Value="0"></asp:ListItem>
@@ -24,11 +24,11 @@
             </asp:DropDownList>
             <asp:DropDownList ID="ddlClass" runat="server" Width="160px">
             </asp:DropDownList>
-            <asp:LinkButton ID="lbtnSearch" runat="server" CssClass="easyui-linkbutton" data-options="plain:true,iconCls:'icon-search'"
+            <asp:LinkButton ID="lbtnSearch" runat="server" class="btn btn-default" data-options="plain:true,iconCls:'icon-search'"
                 OnClick="lbtnSearch_Click">搜索</asp:LinkButton>
         </div>
-        <div id="box_middle">
-            <asp:GridView ID="gvwData" runat="server" AutoGenerateColumns="false" CssClass="table"
+        <div class="panel-body" id="box_middle">
+            <asp:GridView ID="gvwData" runat="server" runat="server" AutoGenerateColumns="false" CssClass="table table_style"  GridLines="None" 
                 HorizontalAlign="Center" OnRowDataBound="gvwData_RowDataBound">
                 <Columns>
                     <asp:TemplateField HeaderText="">
