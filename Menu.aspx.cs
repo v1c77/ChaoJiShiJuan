@@ -107,6 +107,9 @@ public partial class _Default : BasePage
         gvwData.DataBind();
     }
 
+
+   
+
     private String GetWhereSql()
     {
         StringBuilder sb = new StringBuilder();
@@ -115,7 +118,7 @@ public partial class _Default : BasePage
         if (user.usertype == 2)  
         {
             //教师（管理员的公告）
-            sb.Append(" and usertype=1 ");
+            sb.Append(" and (usertype=1 or usertype=2 )");
         }
         if (user.usertype == 3)
         {

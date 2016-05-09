@@ -131,6 +131,11 @@
         td {
             padding-right: 20px;
         }
+
+        .zhuti{
+            text-align:left!important;
+        }
+        
     </style>
 
 </head>
@@ -610,7 +615,8 @@
                                                                                 </ItemTemplate>
 
                                                                             </asp:TemplateField>
-                                                                            <asp:TemplateField HeaderText="主题">
+                                                                            <asp:TemplateField HeaderText="主题" ItemStyle-CssClass="zhuti">
+                                                                                
                                                                                 <ItemTemplate>
                                                                                     <a href="#" onclick="return myAddTab('查看公告　','message/MessageShow.aspx?id= <%#Eval("id") %>')"><%# GetSmallTitle(Eval("messagetitle").ToString())%></a>
                                                                                 </ItemTemplate>

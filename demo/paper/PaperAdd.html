@@ -54,24 +54,21 @@
 		 <form method="post" action="" class="form-inline" role="form">
 		  <div  class="panel panel-default" style="height:100%;">
 		   <div  class="panel-heading">					   
-         <asp:TextBox ID="txtPaperTitle" runat="server" class="form-control" placeholder="试卷标题" Width="200px"></asp:TextBox>
-         <asp:RequiredFieldValidator ID="RequiredFieldValidator2" runat="server" ErrorMessage="不能为空"
-                                     ControlToValidate="txtPaperTitle"></asp:RequiredFieldValidator>
-         
-             <label>科目名</label>
-         <asp:DropDownList ID="ddlSubject" runat="server" class="form-control" Width="200px" OnSelectedIndexChanged="ddlSubject_SelectedIndexChanged"
-                           AutoPostBack="true">
-            
-             <label>时间(分钟)</label>
-             <asp:DropDownList ID="ddlDurationTime" runat="server" class="form-control"
-                               Width="160px">
-                 <asp:ListItem Text="30" Value="30"></asp:ListItem>
-                 <asp:ListItem Text="60" Value="60"></asp:ListItem>
-                 <asp:ListItem Text="90" Value="90"></asp:ListItem>
-                 <asp:ListItem Text="120" Value="120"></asp:ListItem>
-             </asp:DropDownList>
-             
-</div><!--panel-heading-->
+			 <label class="sr-only">试卷标题</label>										 
+			 <input type="text" style="width:200px;"class="form-control" placeholder="试卷标题">
+			 <label>科目名</label>
+			 <select class="form-control" > <!--可换成asp:DropDownList 属性 CssClass="form-control"-->
+                 <option  selected="selected">所有科目</option>
+                 <option>XXXXXXXXX</option>
+             </select>
+			 <label>时间(分钟)</label>
+			 <select class="form-control" > <!--可换成asp:DropDownList 属性 CssClass="form-control"-->
+                 <option  selected="selected">30</option>
+                 <option>60</option>
+				 <option>90</option>
+             </select>
+			 <label>(不能为空)</label>
+		   </div><!--panel-heading-->
 		   <div  class="panel-body " id="panel-body">
 		   <div class="table-responsive">
             <table class="table table_style">

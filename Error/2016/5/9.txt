@@ -157,3 +157,78 @@
    在 System.Web.UI.Control.LoadRecursive()
    在 System.Web.UI.Page.ProcessRequestMain(Boolean includeStagesBeforeAsyncPoint, Boolean includeStagesAfterAsyncPoint)
 --------------------------------------------------------------------------------------
+用户IP:::1
+发生时间:2016/5/9 星期一 20:09:50
+发生异常页: http://localhost:60838/arrange/ExamList.aspx
+异常信息: 未将对象引用设置到对象的实例。
+错误源:App_Code.4gjlaxbj
+堆栈信息:   在 Util.MyUtil.GetMySubject() 位置 h:\vs2015\ChaoJiShiJuan\App_Code\util\MyUtil.cs:行号 415
+   在 subject_SubjectList.BindSubject() 位置 h:\vs2015\ChaoJiShiJuan\arrange\ExamList.aspx.cs:行号 44
+   在 subject_SubjectList.Page_Load(Object sender, EventArgs e) 位置 h:\vs2015\ChaoJiShiJuan\arrange\ExamList.aspx.cs:行号 37
+   在 System.Web.Util.CalliHelper.EventArgFunctionCaller(IntPtr fp, Object o, Object t, EventArgs e)
+   在 System.Web.Util.CalliEventHandlerDelegateProxy.Callback(Object sender, EventArgs e)
+   在 System.EventHandler.Invoke(Object sender, EventArgs e)
+   在 System.Web.UI.Control.OnLoad(EventArgs e)
+   在 System.Web.UI.Control.LoadRecursive()
+   在 System.Web.UI.Page.ProcessRequestMain(Boolean includeStagesBeforeAsyncPoint, Boolean includeStagesAfterAsyncPoint)
+--------------------------------------------------------------------------------------
+用户IP:::1
+发生时间:2016/5/9 星期一 20:46:53
+发生异常页: http://localhost:60838/login.aspx
+异常信息: 类型“System.Web.UI.WebControls.TableItemStyle”不具有名为“style”的公共属性。
+错误源:System.Web
+堆栈信息:   在 System.Web.UI.ControlBuilder.AddProperty(String filter, String name, String value, Boolean mainDirectiveMode)
+   在 System.Web.UI.ControlBuilder.PreprocessAttribute(String filter, String attribname, String attribvalue, Boolean mainDirectiveMode)
+   在 System.Web.UI.ControlBuilder.PreprocessAttributes(ParsedAttributeCollection attribs)
+   在 System.Web.UI.ControlBuilder.Init(TemplateParser parser, ControlBuilder parentBuilder, Type type, String tagName, String id, IDictionary attribs)
+   在 System.Web.UI.ControlBuilder.CreateBuilderFromType(TemplateParser parser, ControlBuilder parentBuilder, Type type, String tagName, String id, IDictionary attribs, Int32 line, String sourceFileName)
+   在 System.Web.UI.ControlBuilder.GetChildPropertyBuilder(String tagName, IDictionary attribs, Type& childType, TemplateParser templateParser, Boolean defaultProperty)
+   在 System.Web.UI.ControlBuilder.CreateChildBuilder(String filter, String tagName, IDictionary attribs, TemplateParser parser, ControlBuilder parentBuilder, String id, Int32 line, VirtualPath virtualPath, Type& childType, Boolean defaultProperty)
+   在 System.Web.UI.TemplateParser.ProcessBeginTag(Match match, String inputText)
+   在 System.Web.UI.TemplateParser.ParseStringInternal(String text, Encoding fileEncoding)
+--------------------------------------------------------------------------------------
+用户IP:::1
+发生时间:2016/5/9 星期一 20:47:58
+发生异常页: http://localhost:60838/login.aspx
+异常信息: 类型“System.Web.UI.WebControls.TableItemStyle”不具有名为“style”的公共属性。
+错误源:System.Web
+堆栈信息:   在 System.Web.UI.ControlBuilder.AddProperty(String filter, String name, String value, Boolean mainDirectiveMode)
+   在 System.Web.UI.ControlBuilder.PreprocessAttribute(String filter, String attribname, String attribvalue, Boolean mainDirectiveMode)
+   在 System.Web.UI.ControlBuilder.PreprocessAttributes(ParsedAttributeCollection attribs)
+   在 System.Web.UI.ControlBuilder.Init(TemplateParser parser, ControlBuilder parentBuilder, Type type, String tagName, String id, IDictionary attribs)
+   在 System.Web.UI.ControlBuilder.CreateBuilderFromType(TemplateParser parser, ControlBuilder parentBuilder, Type type, String tagName, String id, IDictionary attribs, Int32 line, String sourceFileName)
+   在 System.Web.UI.ControlBuilder.GetChildPropertyBuilder(String tagName, IDictionary attribs, Type& childType, TemplateParser templateParser, Boolean defaultProperty)
+   在 System.Web.UI.ControlBuilder.CreateChildBuilder(String filter, String tagName, IDictionary attribs, TemplateParser parser, ControlBuilder parentBuilder, String id, Int32 line, VirtualPath virtualPath, Type& childType, Boolean defaultProperty)
+   在 System.Web.UI.TemplateParser.ProcessBeginTag(Match match, String inputText)
+   在 System.Web.UI.TemplateParser.ParseStringInternal(String text, Encoding fileEncoding)
+--------------------------------------------------------------------------------------
+用户IP:::1
+发生时间:2016/5/9 星期一 20:48:05
+发生异常页: http://localhost:60838/login.aspx
+异常信息: 类型“System.Web.UI.WebControls.TableItemStyle”不具有名为“style”的公共属性。
+错误源:System.Web
+堆栈信息:   在 System.Web.UI.ControlBuilder.AddProperty(String filter, String name, String value, Boolean mainDirectiveMode)
+   在 System.Web.UI.ControlBuilder.PreprocessAttribute(String filter, String attribname, String attribvalue, Boolean mainDirectiveMode)
+   在 System.Web.UI.ControlBuilder.PreprocessAttributes(ParsedAttributeCollection attribs)
+   在 System.Web.UI.ControlBuilder.Init(TemplateParser parser, ControlBuilder parentBuilder, Type type, String tagName, String id, IDictionary attribs)
+   在 System.Web.UI.ControlBuilder.CreateBuilderFromType(TemplateParser parser, ControlBuilder parentBuilder, Type type, String tagName, String id, IDictionary attribs, Int32 line, String sourceFileName)
+   在 System.Web.UI.ControlBuilder.GetChildPropertyBuilder(String tagName, IDictionary attribs, Type& childType, TemplateParser templateParser, Boolean defaultProperty)
+   在 System.Web.UI.ControlBuilder.CreateChildBuilder(String filter, String tagName, IDictionary attribs, TemplateParser parser, ControlBuilder parentBuilder, String id, Int32 line, VirtualPath virtualPath, Type& childType, Boolean defaultProperty)
+   在 System.Web.UI.TemplateParser.ProcessBeginTag(Match match, String inputText)
+   在 System.Web.UI.TemplateParser.ParseStringInternal(String text, Encoding fileEncoding)
+--------------------------------------------------------------------------------------
+用户IP:::1
+发生时间:2016/5/9 星期一 20:48:11
+发生异常页: http://localhost:60838/login.aspx
+异常信息: 类型“System.Web.UI.WebControls.TableItemStyle”不具有名为“style”的公共属性。
+错误源:System.Web
+堆栈信息:   在 System.Web.UI.ControlBuilder.AddProperty(String filter, String name, String value, Boolean mainDirectiveMode)
+   在 System.Web.UI.ControlBuilder.PreprocessAttribute(String filter, String attribname, String attribvalue, Boolean mainDirectiveMode)
+   在 System.Web.UI.ControlBuilder.PreprocessAttributes(ParsedAttributeCollection attribs)
+   在 System.Web.UI.ControlBuilder.Init(TemplateParser parser, ControlBuilder parentBuilder, Type type, String tagName, String id, IDictionary attribs)
+   在 System.Web.UI.ControlBuilder.CreateBuilderFromType(TemplateParser parser, ControlBuilder parentBuilder, Type type, String tagName, String id, IDictionary attribs, Int32 line, String sourceFileName)
+   在 System.Web.UI.ControlBuilder.GetChildPropertyBuilder(String tagName, IDictionary attribs, Type& childType, TemplateParser templateParser, Boolean defaultProperty)
+   在 System.Web.UI.ControlBuilder.CreateChildBuilder(String filter, String tagName, IDictionary attribs, TemplateParser parser, ControlBuilder parentBuilder, String id, Int32 line, VirtualPath virtualPath, Type& childType, Boolean defaultProperty)
+   在 System.Web.UI.TemplateParser.ProcessBeginTag(Match match, String inputText)
+   在 System.Web.UI.TemplateParser.ParseStringInternal(String text, Encoding fileEncoding)
+--------------------------------------------------------------------------------------
