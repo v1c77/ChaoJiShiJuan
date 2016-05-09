@@ -2,6 +2,45 @@
     CodeFile="ScoreList.aspx.cs" Inherits="subject_SubjectList" Title="无标题页" %>
 
 <asp:Content ID="Content1" ContentPlaceHolderID="head" runat="Server">
+    <style>
+  .panel-footer{
+   padding:0;
+   background-color:#FFFFFF;
+   height:34px;
+  }
+  .panel-footer ul{
+   margin:0;
+  }
+  .pagination>li:first-child>a{
+  border-top-left-radius:0;
+  }
+  .pagination>li:last-child>a{
+  border-top-right-radius:0;
+  border-bottom-right-radius:0;
+  }
+  .panel{
+   margin-bottom:5px;
+   border:none;
+   border-color:
+  }
+  .panel-body{
+   padding:0;
+  }
+  .panel-heading{
+   border:none; 
+  }
+  .panel-footer{
+   bottom:0;
+   width:100%;
+  }
+  .table{
+  margin:0;	
+  }
+  .table tr td{
+
+  margin:0;	
+  }
+  </style>
     <style type="text/css">
         .table th
         {
@@ -16,7 +55,7 @@
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" runat="Server">
     <div id="box" class="panel panel-default" style="height:100%;">
         <div id="box_top" style="height:60px;">
-            学生名：<asp:TextBox ID="txtWord" CssClass="form-control"  runat="server"></asp:TextBox>
+            <asp:TextBox  class="form-control"   ID="txtWord" CssClass="form-control"  placeholder="学生名" runat="server"></asp:TextBox>
             分数 <asp:DropDownList  CssClass="form-control"   ID="ddlRange1" runat="server" Width="80px">
                 <asp:ListItem Text="0" Value="0"></asp:ListItem>
                 <asp:ListItem Text="60" Value="60"></asp:ListItem>
@@ -38,7 +77,7 @@
              <asp:DropDownList  CssClass="form-control"   ID="ddlArrange" runat="server" Width="200px" AutoPostBack="true"
                 OnSelectedIndexChanged="ddlArrange_SelectedIndexChanged">
             </asp:DropDownList>
-            <br />
+            
              <asp:DropDownList  CssClass="form-control"   ID="ddlClass" runat="server">
             </asp:DropDownList>
              <asp:DropDownList  CssClass="form-control"   ID="ddlScoreStatus" runat="server">

@@ -38,7 +38,7 @@ var CKFinder = function( basePath, width, height, selectFunction )
 	// If set to true, "Select thumbnail" item will not appear in the context menu.
 	this.DisableThumbnailSelection = false ;
 
-	// The name of the CSS class rule assigned to the CKFinder frame (default = "CKFinderFrame").
+	// The name of the class rule assigned to the CKFinder frame (default = "CKFinderFrame").
 	this.ClassName = null || 'CKFinderFrame' ;
 
 	// Resource Type and the name of the startup folder, separated with a colon (i.e. "Files:/", "Images:/cars/").

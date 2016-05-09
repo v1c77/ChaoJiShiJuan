@@ -43,7 +43,7 @@
                 章节名：
             </td>
             <td>
-                <asp:TextBox ID="txtChapterName" runat="server"></asp:TextBox>
+                <asp:TextBox  class="form-control"   ID="txtChapterName" runat="server"></asp:TextBox>
                 <asp:RequiredFieldValidator ID="RequiredFieldValidator1" runat="server" ErrorMessage="*"
                     ControlToValidate="txtChapterName"></asp:RequiredFieldValidator>
             </td>
@@ -59,7 +59,7 @@
             <td>
             </td>
             <td>
-                <asp:LinkButton ID="lbtnAdd" runat="server" class="btn btn-default" data-options="iconCls:'icon-save'"
+                <asp:LinkButton ID="lbtnAdd" runat="server" class="btn btn-info" data-options="iconCls:'icon-save'"
                     OnClick="lbtnAdd_Click">保存</asp:LinkButton>
             </td>
         </tr>

@@ -1,7 +1,4 @@
-﻿#viewSR,#viewCB,#viewJD,#viewBF,#viewSA
-{
-    padding:10px;
-}
+﻿
 .viewTitle
 {
     margin-top: 10px;
@@ -21,24 +18,13 @@
     margin-top: 40px;
     text-align: center;
 }
-#sumtable
-{
-    text-align: center;
-    border: solid 1px #333333;
-}
-#sumtable th
-{
-    color: Green;
-}
+
+
 .leftitem
 {
     color: Blue;
 }
-#bottom
-{
-    width: auto;
-    margin-left: 325px;
-}
+
 .topitem
 {
     margin-top: 10px;

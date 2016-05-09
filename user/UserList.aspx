@@ -73,7 +73,7 @@
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" runat="Server">
     <div id="box" class="panel panel-default" style="height:100%;">
        <div id="box_top" class="panel-heading">        
-            登录名：<asp:TextBox ID="txtWord" CssClass="form-control"  runat="server"></asp:TextBox> 
+            登录名：<asp:TextBox  class="form-control"   ID="txtWord" CssClass="form-control"  runat="server"></asp:TextBox> 
              <asp:DropDownList  CssClass="form-control"   ID="ddlUsertType" runat="server"  Width="160px">
                <asp:ListItem Value="0" Text="所有"></asp:ListItem>
                <asp:ListItem Value="1" Text="管理员"></asp:ListItem>

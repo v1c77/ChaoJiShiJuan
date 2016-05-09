@@ -98,7 +98,7 @@
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" runat="Server">
     <div id="box" class="panel panel-default" style="height:100%;">
        <div id="box_top" class="panel-heading">
-           <asp:TextBox ID="txtWord" CssClass="form-control" placeholder="试卷标题"  runat="server"></asp:TextBox>
+           <asp:TextBox  class="form-control"   ID="txtWord" CssClass="form-control" placeholder="试卷标题"  runat="server"></asp:TextBox>
              <asp:DropDownList  CssClass="form-control"   ID="ddlSubject" runat="server" Width="160px" >
             </asp:DropDownList>
              <asp:DropDownList  CssClass="form-control"  ID="ddlPaperType" runat="server" Width="160px">

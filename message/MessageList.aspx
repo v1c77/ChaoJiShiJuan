@@ -45,7 +45,7 @@
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" runat="Server">
     <div id="box" class="panel panel-default" style="height:100%;">
        <div id="box_top" class="panel-heading">
-            标题或内容：<asp:TextBox ID="txtWord" CssClass="form-control"  runat="server"></asp:TextBox>
+            标题或内容：<asp:TextBox  class="form-control"   ID="txtWord" CssClass="form-control"  runat="server"></asp:TextBox>
             <asp:LinkButton ID="lbtnSearch" runat="server" class="btn btn-default" data-options="plain:true,iconCls:'icon-search'"
                 OnClick="lbtnSearch_Click"><span class="glyphicon glyphicon-search marginRight" ></span>搜索</asp:LinkButton>
             <asp:LinkButton ID="lbtnDelete" runat="server" class="btn btn-default" data-options="plain:true,iconCls:'icon-cancel'"
@@ -87,7 +87,7 @@
                     </asp:TemplateField>
                     <asp:TemplateField HeaderText="操作">
                         <ItemTemplate>
-                            <a class="easyui-linkbutton" data-options="plain:true,iconCls:'icon-cut'" onclick="return top.addTab('编辑公告','message/MessageAdd.aspx?id=<%#Eval("id") %>')">
+                            <a  class="btn btn-info"  data-options="plain:true,iconCls:'icon-cut'" onclick="return top.addTab('编辑公告','message/MessageAdd.aspx?id=<%#Eval("id") %>')">
                                 <span class="glyphicon glyphicon-pencil  marginRight" ></span>编辑</a>
                         </ItemTemplate>
                     </asp:TemplateField>

@@ -113,7 +113,7 @@
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" runat="Server">
     <div id="box" class="panel panel-default" style="height:100%;">
        <div id="box_top" class="panel-heading">
-            <asp:TextBox ID="txtWord" CssClass="form-control" placeholder="题目" runat="server"></asp:TextBox>
+            <asp:TextBox  class="form-control"   ID="txtWord" CssClass="form-control" placeholder="题目" runat="server"></asp:TextBox>
              <asp:DropDownList  CssClass="form-control"   ID="ddlSubject" runat="server" Width="160px" OnSelectedIndexChanged="ddlSubject_SelectedIndexChanged"
                 AutoPostBack="true">
             </asp:DropDownList>

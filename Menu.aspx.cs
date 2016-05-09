@@ -102,7 +102,7 @@ public partial class _Default : BasePage
     protected void BindData()
     {
         pageTotal = MyUtil.GetCount("tbMessage,tbUser", "tbMessage.userid=tbUser.id", GetWhereSql());
-        gvwData.DataSource = MyUtil.GetListByIndex(5, pageIndex, "tbMessage.*,tbUser.realname", "tbMessage,tbUser", "tbMessage.userid=tbUser.id", GetWhereSql(), "tbMessage.id desc");
+        gvwData.DataSource = MyUtil.GetListByIndex(9, pageIndex, "tbMessage.*,tbUser.realname", "tbMessage,tbUser", "tbMessage.userid=tbUser.id", GetWhereSql(), "tbMessage.id desc");
         gvwData.DataKeyNames = new String[] { "id" };
         gvwData.DataBind();
     }

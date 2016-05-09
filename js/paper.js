@@ -283,7 +283,8 @@ function becancel(id)
 {   
     var table=document.getElementById(id);
     var textboxArray=table.getElementsByTagName("input");
-    for(var i = 1; i < textboxArray.length; i=i+2)    {
+    for(var i = 1; i < textboxArray.length; i=i+2)
+    {
         textboxArray[i].value="";
     }
     closeDiv("view"+id+"Top");
@@ -297,7 +298,8 @@ function besure(id)
     var tempCount=0;
     var j=0;
 
-    for(var i = 1; i < textboxArray.length; i=i+2)    {   
+    for(var i = 1; i < textboxArray.length; i=i+2)
+    {   
         var usefulCount=parseInt(usefulArray[j].innerText);
         var inputCount;
         if(!isNaN(textboxArray[i].value))

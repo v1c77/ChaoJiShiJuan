@@ -49,7 +49,7 @@
                 练习名：
             </td>
             <td>
-                <asp:TextBox ID="txtArrangeName" runat="server" Width="260px"></asp:TextBox>
+                <asp:TextBox  class="form-control"   ID="txtArrangeName" runat="server" Width="260px"></asp:TextBox>
                 <asp:RequiredFieldValidator ID="RequiredFieldValidator1" runat="server" ErrorMessage="*"
                     ControlToValidate="txtArrangeName"></asp:RequiredFieldValidator>
             </td>
@@ -81,7 +81,7 @@
                 开始时间：
             </td>
             <td>
-                <asp:TextBox ID="txtStartTime" runat="server" CssClass="easyui-datetimebox" data-options="showSeconds:false" Width="160px"></asp:TextBox>
+                <asp:TextBox  class="form-control"   ID="txtStartTime" runat="server" CssClass="easyui-datetimebox" data-options="showSeconds:false" Width="160px"></asp:TextBox>
             </td>
         </tr>
         <tr>
@@ -89,7 +89,7 @@
                 截止时间：
             </td>
             <td>
-                <asp:TextBox ID="txtEndTime" runat="server" CssClass="easyui-datetimebox" data-options="showSeconds:false" Width="160px"></asp:TextBox>
+                <asp:TextBox  class="form-control"   ID="txtEndTime" runat="server" CssClass="easyui-datetimebox" data-options="showSeconds:false" Width="160px"></asp:TextBox>
             </td>
         </tr>
         <tr>
@@ -103,7 +103,7 @@
             <td>
             </td>
             <td>
-                <asp:LinkButton ID="lbtnAdd" runat="server" class="btn btn-default" data-options="iconCls:'icon-save'"
+                <asp:LinkButton ID="lbtnAdd" runat="server" class="btn btn-info" data-options="iconCls:'icon-save'"
                     OnClick="lbtnAdd_Click" >保存</asp:LinkButton>
             </td>
         </tr>

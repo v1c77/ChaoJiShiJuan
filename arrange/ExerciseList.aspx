@@ -96,7 +96,7 @@
 		<div  class="col-sm-12 col-xs-12 ">	 
      <div id="box" class="panel panel-default" style="height:100%;">
        <div id="box_top" class="panel-heading">
-            <asp:TextBox ID="txtWord" CssClass="form-control" placeholder="考试名" runat="server"></asp:TextBox>
+            <asp:TextBox  class="form-control"   ID="txtWord" CssClass="form-control" placeholder="考试名" runat="server"></asp:TextBox>
              <asp:DropDownList  ID="ddlSubject" runat="server" CssClass="form-control">
             </asp:DropDownList>
            <div class="btn-group" role="group">

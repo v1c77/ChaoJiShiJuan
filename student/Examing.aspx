@@ -445,7 +445,7 @@
                                                 <p class="MsoNormal">
                                                     <br>
                                                         <%# GetBFFront(((tbBlank)Container.DataItem).ques)%>
-                                                        <asp:TextBox ID="txtBF" runat="server" CssClass="oe_bfText" Width='<%#((tbBlank)Container.DataItem).blanklength*40%>'></asp:TextBox>
+                                                        <asp:TextBox  class="form-control"   ID="txtBF" runat="server" CssClass="oe_bfText" Width='<%#((tbBlank)Container.DataItem).blanklength*40%>'></asp:TextBox>
                                                         <%# GetBFAfter(((tbBlank)Container.DataItem).ques)%></br>
                                                     <asp:Label ID="lblBFAnswer" runat="server" Visible="false" ForeColor="Red"></asp:Label>
                                                 </p>
@@ -488,7 +488,7 @@
                                             </div>
                                         </div>
                                         <div class="testpaper-question-choices">
-                                            <asp:TextBox ID="txtAnswer" Style="border: solid 1px #cccccc;" runat="server" TextMode="MultiLine"
+                                            <asp:TextBox  class="form-control"   ID="txtAnswer" Style="border: solid 1px #cccccc;" runat="server" TextMode="MultiLine"
                                                 Rows="15" Columns="45" EnableTheming="false"></asp:TextBox>
                                             <asp:HiddenField ID="hfSA" runat="server" Value="<%# ((tbAnswer)Container.DataItem).id %>" />
                                         </div>

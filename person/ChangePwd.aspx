@@ -48,7 +48,7 @@
                                 <label class="sr-only">原密码:</label>
                                 <div class="col-sm-12 col-xs-12">
 
-                                    <asp:TextBox ID="txtOldPwd" runat="server" CssClass="form-control myInput" TextMode="Password" placeholder="原密码"></asp:TextBox>
+                                    <asp:TextBox  class="form-control"   ID="txtOldPwd" runat="server" CssClass="form-control myInput" TextMode="Password" placeholder="原密码"></asp:TextBox>
                                     <asp:RequiredFieldValidator ID="RequiredFieldValidator1" runat="server" ErrorMessage="*" ControlToValidate="txtOldPwd"></asp:RequiredFieldValidator>
                                 </div>
 
@@ -56,7 +56,7 @@
                             <div class="form-group">
                                 <label class="sr-only">新密码:</label>
                                 <div class="col-sm-12 col-xs-12">
-                                    <asp:TextBox ID="txtNewPwd" runat="server" TextMode="Password" CssClass="form-control myInput" placeholder="新密码"></asp:TextBox>
+                                    <asp:TextBox  class="form-control"   ID="txtNewPwd" runat="server" TextMode="Password" CssClass="form-control myInput" placeholder="新密码"></asp:TextBox>
                                     <asp:RequiredFieldValidator ID="RequiredFieldValidator2" runat="server" ErrorMessage="*" ControlToValidate="txtNewPwd"></asp:RequiredFieldValidator>
 
                                 </div>
@@ -65,7 +65,7 @@
                                 <label class="sr-only">重复新密码:</label>
                                 <div class="col-sm-12 col-xs-12">
 
-                                    <asp:TextBox ID="txtNewPwd2" runat="server" TextMode="Password" CssClass="form-control myInput" placeholder="重复新密码"></asp:TextBox>
+                                    <asp:TextBox  class="form-control"   ID="txtNewPwd2" runat="server" TextMode="Password" CssClass="form-control myInput" placeholder="重复新密码"></asp:TextBox>
                                     <asp:RequiredFieldValidator ID="RequiredFieldValidator3" runat="server" ErrorMessage="*" ControlToValidate="txtNewPwd2"></asp:RequiredFieldValidator>
                                 </div>
                             </div>

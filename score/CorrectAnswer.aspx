@@ -2,6 +2,12 @@
     CodeFile="CorrectAnswer.aspx.cs" Inherits="subject_SubjectAdd" Title="无标题页" %>
 
 <asp:Content ID="Content1" ContentPlaceHolderID="head" runat="Server">
+    <style type="text/css">
+
+	.col-xs-offset-3{
+	margin-top:2%;
+	}
+  </style>
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" runat="Server">
     <table id="addtable">
@@ -42,7 +48,7 @@
                 参考答案：
             </td>
             <td>
-                <asp:TextBox ID="txtStandard" runat="server" Width="320px" TextMode="MultiLine" Rows="3" Enabled="false"></asp:TextBox>
+                <asp:TextBox  class="form-control"   ID="txtStandard" runat="server" Width="320px" TextMode="MultiLine" Rows="3" Enabled="false"></asp:TextBox>
             </td>
         </tr>
         <tr>
@@ -50,7 +56,7 @@
                 学生答案：
             </td>
             <td>
-                <asp:TextBox ID="txtStudent" runat="server" Width="320px" TextMode="MultiLine" Rows="3" Enabled="false"></asp:TextBox>
+                <asp:TextBox  class="form-control"   ID="txtStudent" runat="server" Width="320px" TextMode="MultiLine" Rows="3" Enabled="false"></asp:TextBox>
             </td>
         </tr>
         <tr>
@@ -81,7 +87,7 @@
             <td>
             </td>
             <td>
-                <asp:LinkButton ID="lbtnAdd" runat="server" class="btn btn-default" data-options="iconCls:'icon-save'"
+                <asp:LinkButton ID="lbtnAdd" runat="server" class="btn btn-info" data-options="iconCls:'icon-save'"
                     OnClick="lbtnAdd_Click">保存并批改下一条</asp:LinkButton>
             </td>
         </tr>

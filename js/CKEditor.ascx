@@ -31,7 +31,7 @@ CKEDITOR.editorConfig = function( config )
 </script>
 <div style='width:<%=this.Width %>px'>
     <div>
-        <asp:TextBox ID="txtCKContent" runat="server" CssClass="ckeditor" TextMode="MultiLine">
+        <asp:TextBox  class="form-control"   ID="txtCKContent" runat="server" CssClass="ckeditor" TextMode="MultiLine">
         </asp:TextBox>
     </div>
     <div style="height:10px;"></div>

@@ -1,0 +1,51 @@
+用户IP:120.27.31.43
+发生时间:2016/5/7 14:56:55
+发生异常页: http://www.chaojishijuan.cn:8080/user/UserList.aspx
+异常信息: 未将对象引用设置到对象的实例。
+错误源:App_Web_rlxy3ylc
+堆栈信息:   在 user_UserList.GetWhereSql() 位置 c:\web\chaojishijuan\user\UserList.aspx.cs:行号 61
+   在 user_UserList.BindData() 位置 c:\web\chaojishijuan\user\UserList.aspx.cs:行号 42
+   在 user_UserList.Page_Load(Object sender, EventArgs e) 位置 c:\web\chaojishijuan\user\UserList.aspx.cs:行号 36
+   在 System.EventHandler.Invoke(Object sender, EventArgs e)
+   在 System.Web.UI.Control.LoadRecursive()
+   在 System.Web.UI.Page.ProcessRequestMain(Boolean includeStagesBeforeAsyncPoint, Boolean includeStagesAfterAsyncPoint)
+--------------------------------------------------------------------------------------
+用户IP:27.17.29.182
+发生时间:2016/5/7 15:15:54
+发生异常页: http://www.chaojishijuan.cn:8080/Menu.aspx
+异常信息: 无效的视图状态。
+	Client IP: 27.17.29.182
+	Port: 32357
+	Referer: http://www.chaojishijuan.cn:8080/
+	Path: /Menu.aspx
+	User-Agent: Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/50.0.2661.94 Safari/537.36
+	ViewState: /wEPDwUJOTczOTM3MjE0D2QWAgIDD2QWAgIBD2QWImYPDxYCHgRUZXh0BQnmsZ/plb/mloxkZAIBDw8WAh4ISW1hZ2VVcmwFEH4vaW1hZ2VzL3RlYS5wbmdkZAICDw8WAh8ABQnmsZ/plb/mloxkZAIDDw8WAh8ABQbmlZnluIhkZAIEDw8WAh8ABQ1qaWFuZ2NoYW5nYmluZGQCBQ8PFgIfAAUQMjAxNuW5tDA15pyIN+aXpWRkAgYPDxYCHwAFDDI3LjE3LjI5LjE4MmRkAggPFgIeB1Zpc2libGVoZAIJDxYCHwJoZAIPDxYCHwJoZAIQDxYCHwJoZAISDxYCHwJoZAITDxYCHwJoZAIUDzwrABEDAA8WBB4LXyFEYXRhQm91bmRnHgtfIUl0ZW1Db3VudAIFZAEQFgAWABYADBQrAAAWAmYPZBYMAgEPZBYIZg9kFgJmDxUBATFkAgEPZBYCZg8VAQnnrqHnkIblkZhkAgIPZBYCZg8VAgIyMwIyM2QCAw9kFgJmDxUBETIwMTYvNS82IDIxOjU2OjA5ZAICD2QWCGYPZBYCZg8VAQEyZAIBD2QWAmYPFQEJ566h55CG5ZGYZAICD2QWAmYPFQICMjIHMjM0MjM0MmQCAw9kFgJmDxUBETIwMTYvNS82IDEyOjUwOjU2ZAIDD2QWCGYPZBYCZg8VAQEzZAIBD2QWAmYPFQEJ566h55CG5ZGYZAICD2QWAmYPFQICMjEFMjMyMzVkAgMPZBYCZg8VAREyMDE2LzUvNiA...
+错误源:
+堆栈信息:
+--------------------------------------------------------------------------------------
+用户IP:::1
+发生时间:2016/5/7 23:02:42
+发生异常页: http://localhost:60838/paper/PaperEdit.aspx
+异常信息: 未将对象引用设置到对象的实例。
+错误源:App_Web_c-kvwroc
+堆栈信息:   在 subject_SubjectAdd.Page_Load(Object sender, EventArgs e) 位置 f:\Git\ChaoJiShiJuan1.0\paper\PaperEdit.aspx.cs:行号 26
+   在 System.Web.Util.CalliHelper.EventArgFunctionCaller(IntPtr fp, Object o, Object t, EventArgs e)
+   在 System.Web.Util.CalliEventHandlerDelegateProxy.Callback(Object sender, EventArgs e)
+   在 System.EventHandler.Invoke(Object sender, EventArgs e)
+   在 System.Web.UI.Control.OnLoad(EventArgs e)
+   在 System.Web.UI.Control.LoadRecursive()
+   在 System.Web.UI.Page.ProcessRequestMain(Boolean includeStagesBeforeAsyncPoint, Boolean includeStagesAfterAsyncPoint)
+--------------------------------------------------------------------------------------
+用户IP:::1
+发生时间:2016/5/7 23:02:42
+发生异常页: http://localhost:60838/paper/PaperEdit.aspx
+异常信息: 未将对象引用设置到对象的实例。
+错误源:App_Web_c-kvwroc
+堆栈信息:   在 subject_SubjectAdd.Page_Load(Object sender, EventArgs e) 位置 f:\Git\ChaoJiShiJuan1.0\paper\PaperEdit.aspx.cs:行号 26
+   在 System.Web.Util.CalliHelper.EventArgFunctionCaller(IntPtr fp, Object o, Object t, EventArgs e)
+   在 System.Web.Util.CalliEventHandlerDelegateProxy.Callback(Object sender, EventArgs e)
+   在 System.EventHandler.Invoke(Object sender, EventArgs e)
+   在 System.Web.UI.Control.OnLoad(EventArgs e)
+   在 System.Web.UI.Control.LoadRecursive()
+   在 System.Web.UI.Page.ProcessRequestMain(Boolean includeStagesBeforeAsyncPoint, Boolean includeStagesAfterAsyncPoint)
+--------------------------------------------------------------------------------------

@@ -31,7 +31,7 @@
                 题目：
             </td>
             <td>
-                <asp:TextBox ID="txtQues" runat="server" TextMode="MultiLine" Rows="3" Width="300px"></asp:TextBox>
+                <asp:TextBox  class="form-control"   ID="txtQues" runat="server" TextMode="MultiLine" Rows="3" Width="300px"></asp:TextBox>
                 <asp:RequiredFieldValidator ID="RequiredFieldValidator1" runat="server" ErrorMessage="*"
                     ControlToValidate="txtQues"></asp:RequiredFieldValidator>
             </td>
@@ -57,7 +57,7 @@
                 选项A：
             </td>
             <td>
-                <asp:TextBox ID="txtA" runat="server" TextMode="MultiLine" Rows="2" Width="300px"></asp:TextBox>
+                <asp:TextBox  class="form-control"   ID="txtA" runat="server" TextMode="MultiLine" Rows="2" Width="300px"></asp:TextBox>
                 <asp:RequiredFieldValidator ID="RequiredFieldValidator4" runat="server" ErrorMessage="*"
                     ControlToValidate="txtA"></asp:RequiredFieldValidator>
             </td>
@@ -67,7 +67,7 @@
                 选项B：
             </td>
             <td>
-                <asp:TextBox ID="txtB" runat="server" TextMode="MultiLine" Rows="2" Width="300px"></asp:TextBox>
+                <asp:TextBox  class="form-control"   ID="txtB" runat="server" TextMode="MultiLine" Rows="2" Width="300px"></asp:TextBox>
                 <asp:RequiredFieldValidator ID="RequiredFieldValidator5" runat="server" ErrorMessage="*"
                     ControlToValidate="txtB"></asp:RequiredFieldValidator>
             </td>
@@ -77,7 +77,7 @@
                 选项C：
             </td>
             <td>
-                <asp:TextBox ID="txtC" runat="server" TextMode="MultiLine" Rows="2" Width="300px"></asp:TextBox>
+                <asp:TextBox  class="form-control"   ID="txtC" runat="server" TextMode="MultiLine" Rows="2" Width="300px"></asp:TextBox>
                 <asp:RequiredFieldValidator ID="RequiredFieldValidator6" runat="server" ErrorMessage="*"
                     ControlToValidate="txtC"></asp:RequiredFieldValidator>
             </td>
@@ -87,7 +87,7 @@
                 选项D：
             </td>
             <td>
-                <asp:TextBox ID="txtD" runat="server" TextMode="MultiLine" Rows="2" Width="300px"></asp:TextBox>
+                <asp:TextBox  class="form-control"   ID="txtD" runat="server" TextMode="MultiLine" Rows="2" Width="300px"></asp:TextBox>
                 <asp:RequiredFieldValidator ID="RequiredFieldValidator7" runat="server" ErrorMessage="*"
                     ControlToValidate="txtD"></asp:RequiredFieldValidator>
             </td>
@@ -118,7 +118,7 @@
             <td>
             </td>
             <td>
-                <asp:LinkButton ID="lbtnAdd" runat="server" class="btn btn-default" data-options="iconCls:'icon-save'"
+                <asp:LinkButton ID="lbtnAdd" runat="server" class="btn btn-info" data-options="iconCls:'icon-save'"
                     OnClick="lbtnAdd_Click">保存</asp:LinkButton>
             </td>
         </tr>

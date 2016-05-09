@@ -12,7 +12,7 @@
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" runat="Server">
     <div>
        <div id="box_top" class="panel-heading">
-            学生：<asp:TextBox ID="txtWord" CssClass="form-control"  runat="server"></asp:TextBox>
+            学生：<asp:TextBox  class="form-control"   ID="txtWord" CssClass="form-control"  runat="server"></asp:TextBox>
              <asp:DropDownList  CssClass="form-control"   ID="ddlScoreStatus" runat="server">
                 <asp:ListItem Text="所有状态" Value="0"></asp:ListItem>
                 <asp:ListItem Text="还没考试" Value="1"></asp:ListItem>

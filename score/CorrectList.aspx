@@ -33,7 +33,7 @@
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" runat="Server">
     <div id="box" class="panel panel-default" style="height:100%;">
        <div id="box_top" class="panel-heading">
-            考试名：<asp:TextBox ID="txtWord" CssClass="form-control"  runat="server"></asp:TextBox>
+            考试名：<asp:TextBox  class="form-control"   ID="txtWord" CssClass="form-control"  runat="server"></asp:TextBox>
              <asp:DropDownList  CssClass="form-control"   ID="ddlSubject" runat="server" Width="160px">
             </asp:DropDownList>
             <asp:LinkButton ID="lbtnSearch" runat="server" class="btn btn-default" data-options="plain:true,iconCls:'icon-search'"

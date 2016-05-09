@@ -9,7 +9,9 @@
 .simplecalh2 {
     font-size: 22px;
     line-height: 20px;
+    font-weight:500;
     margin: 4px 0;
+    font-family:  'HanHei-SC-thin','Helvetica Neue',Helvetica,'PingFang SC','Hiragino Sans GB','Microsoft YaHei',Arial,sans-serif!important;
 }
 
 .simplecalh3 {
@@ -145,7 +147,7 @@
     width: 100%;
     padding-top: 20px;
     padding-bottom: 0px;
-    margin-bottom: 50px;
+    margin-bottom: 10px;
     display:none;
 
 }

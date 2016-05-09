@@ -10,7 +10,7 @@
                 科目名：
             </td>
             <td>
-                <asp:TextBox ID="txtPaperTitle" runat="server" Width="200px"></asp:TextBox>
+                <asp:TextBox  class="form-control"   ID="txtPaperTitle" runat="server" Width="200px"></asp:TextBox>
                 <asp:RequiredFieldValidator ID="RequiredFieldValidator2" runat="server" ErrorMessage="不能为空"
                     ControlToValidate="txtPaperTitle"></asp:RequiredFieldValidator>
             </td>
@@ -20,7 +20,7 @@
                 时间（分钟）：
             </td>
             <td>
-                <asp:TextBox ID="txtDuration" runat="server" Width="80px"></asp:TextBox>
+                <asp:TextBox  class="form-control"   ID="txtDuration" runat="server" Width="80px"></asp:TextBox>
                 <asp:RequiredFieldValidator ID="RequiredFieldValidator1" runat="server" ErrorMessage="不能为空"
                     ControlToValidate="txtDuration"></asp:RequiredFieldValidator>
                 <asp:RangeValidator ID="RangeValidator1" runat="server" ErrorMessage="大于0整数" ControlToValidate="txtDuration" MinimumValue="1" MaximumValue="999" Type="Integer"></asp:RangeValidator>
@@ -37,7 +37,7 @@
             <td>
             </td>
             <td>
-                <asp:LinkButton ID="lbtnAdd" runat="server" class="btn btn-default" data-options="iconCls:'icon-save'"
+                <asp:LinkButton ID="lbtnAdd" runat="server" class="btn btn-info" data-options="iconCls:'icon-save'"
                     OnClick="lbtnAdd_Click">保存</asp:LinkButton>
             </td>
         </tr>

@@ -54,7 +54,7 @@
                                     <div class="row myRows">
                                         
                                         <div class="col-xs-8 col-xs-offset-2">
-                                            <asp:TextBox ID="txtLoginName" runat="server" CssClass="form-control myInput" placeholder="用户名"></asp:TextBox>
+                                            <asp:TextBox  class="form-control"   ID="txtLoginName" runat="server" CssClass="form-control myInput" placeholder="用户名"></asp:TextBox>
                                         </div>
                                         <div class="col-xs-1">
                                             <asp:RequiredFieldValidator ID="RequiredFieldValidator3" runat="server" ErrorMessage="*"
@@ -64,7 +64,7 @@
                                     <div class="row myRows">
                                         
                                         <div class="col-xs-8 col-xs-offset-2">
-                                            <asp:TextBox ID="txtUserPwd" runat="server" CssClass="form-control myInput" placeholder="密码" TextMode="Password"></asp:TextBox>
+                                            <asp:TextBox  class="form-control"   ID="txtUserPwd" runat="server" CssClass="form-control myInput" placeholder="密码" TextMode="Password"></asp:TextBox>
                                         </div>
                                         <div class="col-xs-1">
                                             <asp:RequiredFieldValidator ID="RequiredFieldValidator4" runat="server" ErrorMessage="*"
